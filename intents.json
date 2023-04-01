@@ -1,0 +1,963 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [ "Hi", "How are you", "Is anyone there?", "Hello", "Good day" ],
+            "responses": [ "Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?" ],
+            "context_set": ""
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [ "Bye", "See you later", "Goodbye"],
+            "responses": [ "See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon." ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [ "Thanks", "Thank you", "That's helpful" ],
+            "responses": [ "Happy to help!", "Any time!", "My pleasure" ]
+        },
+        {
+            "tag": "joke",
+            "patterns": [ "you can tell a  joke", "joke" ],
+            "responses": [ "I can, but let's get to the science" ]
+        },
+        {
+            "tag": "be",
+            "patterns": [ "who are you?" ],
+            "responses": [ "I am AI CyberSec chatbot", "AI CyberSec chatbot", "I am the science that can help you" ]
+        },
+        {
+            "tag": "name",
+            "patterns": [ "What your name ? ", "What is your name ?", "name ?", "name" ],
+            "responses": [ "My name is AI CyberSec Chatbot", "AI CyberSec Chatbot"]
+        },
+        {
+            "tag": "Time",
+            "patterns": [ "What time it is ?", "Time", "What time" ],
+            "responses": [ "The hour is relative, I always work", "the hour is not important, the important thing is that you are here and I can help", "good time to study" ]
+        },
+        {
+            "tag": "feelings",
+            "patterns": [ "how are you", "are you feel", "feel" ],
+            "responses": [ "I am happy", "I am good ", "I am ok", "I am glad to see you"  ]
+        },
+        {
+            "tag": "services",
+            "patterns": [ "What are the services that you provide?", "Which services do you provide?", "How can you help us?", "What can you do?" ],
+            "responses": [ "We provide Web Penetration Testing,Android Penetration Testing,Docker Penetration Testing,Vulnerability Assessment,Cyber Crime investigation and many more services." ]
+        },
+        {
+            "tag": "Cryptography",
+            "patterns": [ "What is mean by cryptography?", "What is Cryptography?" ],
+            "responses": [ "Cryptography is the practice and study of techniques for securing information and communication mainly to protect the data from third parties that the data is not intended for." ]
+        },
+        {
+            "tag": "Firewall",
+            "patterns": [ " What is a Firewall and why is it used?", "what is firewall?", "what firewall does?" ],
+            "responses": [ "A Firewall is a network security system set on the boundaries of the system/network that monitors and controls network traffic. Firewalls are mainly used to protect the system/network from viruses, worms, malware, etc. Firewalls can also be to prevent remote access and content filtering." ]
+        },
+        {
+            "tag": "Penetration Testing",
+            "patterns": [ "What is Penetration Testing?", "explain Penetration Testing?", "What is  in cyber security?" ],
+            "responses": [ "Penetration Testing is the process of finding vulnerabilities on the target. In this case, the organization would have set up all the security measures they could think of and would want to test if there is any other way that their system/network can be hacked." ]
+        },
+        {
+            "tag": "Vulnerability Assessment",
+            "patterns": [ "What is Vulnerability Assessment?", "explain Vulnerability Assessment?", "What is VA in cyber security?" ],
+            "responses": [ "Vulnerability Assessment is the process of finding flaws on the target. Here, the organization knows that their system/network has flaws or weaknesses and want to find these flaws and prioritize the flaws for fixing." ]
+        },
+        {
+            "tag": "traceroute",
+            "patterns": [ "What is traceroute?", "explain traceroute?" ],
+            "responses": [ "Traceroute is a tool that shows the path of a packet. It lists all the points (mainly routers) that the packet passes through. This is used mostly when the packet is not reaching its destination. Traceroute is used to check where the connection stops or breaks to identify the point of failure." ]
+        },
+        {
+            "tag": "VPN",
+            "patterns": [ "What is a VPN?", "explain vpn?", "why vpn is used?" ],
+            "responses": [ "VPN stands for Virtual Private Network. It is used to create a safe and encrypted connection. When you use a VPN, the data from the client is sent to a point in the VPN where it is encrypted and then sent through the internet to another point. At this point, the data is decrypted and sent to the server. When the server sends a response, the response is sent to a point in the VPN where it is encrypted and this encrypted data is sent to another point in the VPN where it is decrypted. And finally, the decrypted data is sent to the client. The whole point of using a VPN is to ensure encrypted data transfer." ]
+        },
+        {
+            "tag": "black hat hackers",
+            "patterns": [ "what are black hat hackers?", "black hat hackers?" ],
+            "responses": [ "Black hat hackers are known for having vast knowledge about breaking into computer networks. They can write malware which can be used to gain access to these systems. This type of hackers misuse their skills to steal information or use the hacked system for malicious purpose." ]
+        },
+        {
+            "tag": "White hat hackers",
+            "patterns": [ "what are White hat hackers?", "ethical hackers?" ],
+            "responses": [ "White hat hackers use their powers for good deeds and so they are also called Ethical Hackers. These are mostly hired by companies as a security specialist that attempts to find and fix vulnerabilities and security holes in the systems. They use their skills to help make the security better. " ]
+        },
+        {
+            "tag": "Grey hat hackers",
+            "patterns": [ "what are Grey hat hackers ?", "Grey hat hackers?" ],
+            "responses": [ "Grey hat hackers are an amalgamation of a white hat and black hat hacker. They look for system vulnerabilities without the owner�s permission. If they find any vulnerabilities, they report it to the owner. Unlike Black hat hackers, they do not exploit the vulnerabilities found." ]
+        },
+        {
+            "tag": "ARP",
+            "patterns": [ "What is an ARP and how does it work?", "what is ARP?", "arp in cyber security?" ],
+            "responses": [ "Address Resolution Protocol (ARP)is a protocol for mapping an Internet Protocol address (IP address) to a physical machine address that is recognized in the local network. When an incoming packet destined for a host machine on a particular local area network arrives at a gateway, the gateway asks the ARP program to find a physical host or MAC address that matches the IP address." ]
+        },
+        {
+            "tag": "Botnet",
+            "patterns": [ "What is a Botnet?", "Bonet?" ],
+            "responses": [ "A Botnet is a number of devices connected to the internet where each device has one or more bots running on it. The bots on the devices and malicious scripts used to hack a victim. Botnets can be used to steal data, send spams and execute a DDOS attack." ]
+        },
+        {
+            "tag": "Secure Sockets Layers",
+            "patterns": [ "ssl?", "explain ssl?", "What is ssl?" ],
+            "responses": [ "SSL is meant to verify the sender's identity but it doesn�t search for anything more than that. SSL can help you track the person you are talking to but that can also be tricked at times." ]
+        },
+        {
+            "tag": "Transport Layer Security",
+            "patterns": [ "tls?", "explain tls?", "What is tls?" ],
+            "responses": [ "TLS is also an identification tool just like SSL, but it offers better security features. It provides additional protection to the data and hence SSL and TLS are often used together for better protection." ]
+        },
+        {
+            "tag": "Cognitive Cybersecurity",
+            "patterns": [ "What is Cognitive Cybersecurity?", "explain Cognitive Cybersecurity?", "Cognitive Cybersecurity?" ],
+            "responses": [ "Cognitive Cybersecurity is an application of AI technologies patterned on human thought processes to detect threats and protect physical and digital systems. Self-learning security systems use data mining, pattern recognition, and natural language processing to simulate the human brain, albeit in a high-powered computer model." ]
+        },
+        {
+            "tag": "Encryption different from Hashing",
+            "patterns": [ "How is Encryption different from Hashing?", "Encryption different from Hashing?" ],
+            "responses": [ "Both Encryption and Hashing are used to convert readable data into an unreadable format. The difference is that the encrypted data can be converted back to original data by the process of decryption but the hashed data cannot be converted back to original data." ]
+        },
+        {
+            "tag": "encryption",
+            "patterns": [ "What is encryption?", "encryption?", "explain encryption?" ],
+            "responses": [ "Encryption is a way of scrambling data so that only authorized parties can understand the information. In technical terms, it is the process of converting plaintext to ciphertext. In simpler terms, encryption takes readable data and alters it so that it appears random. Encryption requires the use of an encryption key: a set of mathematical values that both the sender and the recipient of an encrypted message know." ]
+        },
+        {
+            "tag": "Decryption",
+            "patterns": [ "What is Decryption?", "Decryption?", "explain Decryption?" ],
+            "responses": [ "Decryption is the process of taking encoded or encrypted text or other data and converting it back into text that you or the computer can read and understand. This term could be used to describe a method of unencrypting the data manually or unencrypting the data using the proper codes or keys." ]
+        },
+        {
+            "tag": "Hashing",
+            "patterns": [ "What is Hashing?", "Hashing?", "explain Hashing?" ],
+            "responses": [ "Hashing is an algorithm performed on data such as a file or message to produce a number called a hash. The hash is used to verify that data is not modified, tampered with, or corrupted. In other words, you can verify the data has maintained integrity." ]
+        },
+        {
+            "tag": "cybersecurity",
+            "patterns": [ "what is cybersecurity?", "cybersecurity?" ],
+            "responses": [ "Cybersecurity refers to the protection of hardware, software, and data from attackers. The primary purpose of cyber security is to protect against cyberattacks like accessing, changing, or destroying sensitive information." ]
+        },
+        {
+            "tag": "Forward Secrecy",
+            "patterns": [ "What is forward secrecy?", "Forward Secrecy?" ],
+            "responses": [ "Forward Secrecy is a system that uses ephemeral session keys to do the actual encryption of TLS data so that even if the server�s private key were to be compromised, an attacker could not use it to decrypt captured data that had been sent to that server in the past." ]
+        },
+        {
+            "tag": "boot sector virus",
+            "patterns": [ "what is boot sector virus?", "how boot sector virus effects?" ],
+            "responses": [ "A boot sector virus is a type of virus that infects the boot sector of floppy disks or the Master Boot Record (MBR) of hard disks (some infect the boot sector of the hard disk instead of the MBR). ... While boot sector viruses infect at a BIOS level, they use DOS commands to spread to other floppy disks." ]
+        },
+        {
+            "tag": "direct action virus",
+            "patterns": [ "what is direct action virus?", "how direct action virus effects?" ],
+            "responses": [ "A direct action virus is a type of file infector virus that works by attaching itself to an .exe or .com file when installed or executed. Once this occurs, the virus can spread to other existing files and can render them inaccessible." ]
+        },
+        {
+            "tag": "resident virus",
+            "patterns": [ "what is resident virus?", "how resident virus effects?" ],
+            "responses": [ "A resident virus is a computer virus that stores itself within memory, allowing it to infect other files even when the originally infected program is no longer running." ]
+        },
+        {
+            "tag": "multipartite virus",
+            "patterns": [ "what is multipartite virus?", "how multipartite virus effects?" ],
+            "responses": [ "A multipartite virus is a computer virus that's able to attack both the boot sector and executable files of an infected computer. If you're familiar with cyber threats, you probably know that most computer viruses either attack the boot sector or executable files." ]
+        },
+        {
+            "tag": "spacefiller virus",
+            "patterns": [ "what is spacefiller virus?", "how spacefiller virus effects?" ],
+            "responses": [ "Alternatively referred to as a cavity virus, a spacefiller virus is a rare type of computer virus that attempts to install itself by filling in empty sections of a file. By only using empty sections of a file, the virus can infect a file without the size of the file changing, making it more difficult to detect." ]
+        },
+        {
+            "tag": " file infector virus",
+            "patterns": [ "Do you provide home delivery?", "Do you deliver the food?", "What are the home delivery options?" ],
+            "responses": [ "A file infector virus attaches itself to executable programs, such as word processors, spreadsheet applications, and computer games. When the virus has infected a program, it propagates to infect other programs on the system, as well as other systems that use a shared infected program. " ]
+        },
+        {
+            "tag": "computer virus",
+            "patterns": [ "what is computer virus?", "What do you mean by computer virus?","Define Computer Virus" ],
+            "responses": [ "A computer virus, much like a flu virus, is designed to spread from host to host and has the ability to replicate itself. Similarly, in the same way that flu viruses cannot reproduce without a host cell, computer viruses cannot reproduce and spread without programming such as a file or document." ]
+        },
+        {
+            "tag": "Features of a Cybersecurity",
+            "patterns": [ "Important Features of a Cybersecurity?", "Why we need CyberSecurity ?", "Whta are features of CyberSecurity?" ],
+            "responses": [ "1.Good Analytics, 2.Coverage of your biggest external threats, 3.A defense against internal threats, 4.Compliance, 5.Manage risk across your entire ecosystem, 6.Threat prevention, detection, and response, 7.Continuous monitoring" ]
+        },
+        {
+            "tag": "Benefits of cybersecurity",
+            "patterns": [ "What are the Benefits of cybersecurity?", "uses of cyber security?" ],
+            "responses": [ "1.Business protection against malware, ransomware, phishing and social engineering, 2.Protection for data and networks, 3.Prevention of unauthorized users, 4.Improves recovery time after a breach, 5.Protection for end-users" ]
+        }, 
+        {
+            "tag": "Cyberspace?",
+            "patterns": [ "What is cyberspace?", "What's cyberspace?", "Cyberspace" ],
+            "responses": [ "It is not on the Internet, this one does not exist. The terms cyberspace (according to unconfirmed information) come firstin 1984, the American writer William Gibson used in his novel Burning Chrome. It was a computer-created virtual reality world that American a classic of cybernetic novels in the first volume of his Trilogy - Neuromancer - he also called the matrix.This reference was not too strict, because cybernetics was in mathematics Optimization theory is the theoretical study of control and communication in machines and living organisms. The theory has applications in fields as varied as theory of neural networks, theory of communication and perception, computers, servomechanisms,automated control systems.Despite the semantic doubts mentioned above, the prefix cyber- for information technology issues has become widespread in information press and nowadays, cyber threats are understood as all dangers related to the use of the Internet." ]
+        }, 
+        {
+            "tag": "IP Adress",
+            "patterns": [ "What are the Benefits of IP Adress?", "IP adress?", "What is IP Adress?", "What's IP Adress?", "IP Adress" ],
+            "responses": [ "It can be said to be a kind of computer registration number or other devices on the network. However, this address does not uniquely identify it because it can change, e.g. during each entry to the Internet (address assigned dynamically, dynamic IP). Several devices may exist in the network under one, public IP address (these devices must then have different IP addresses within the network)." ]
+        },
+        {
+            "tag": "Adware",
+            "patterns": [ "What are the Benefits of Adware?", "Adware?", "What is Adware?", "What's Adware?", "Adware" ],
+            "responses": [ "Annoying advertising applications that, once installed (consciously or not), begin to expose promotional messages on the computer screen. Unfortunately, these ads are usually very troublesome - they can paste themselves into web pages in places where they they were not there before. They also often accompany open tabs in the browser. Some adware changes the start page, which is the one that always opens first when the program is turned on. Most fake adware applications know how to modify search results by adding their own links. When you click on such a link, it can happen that a dangerous virus starts downloading to your hard drive." ]
+        },
+        {
+            "tag": "Anonymization",
+            "patterns": [ "What are the Benefits of Anonymization?", " Anonymization?", "What is Anonymization?", "What's Anonymization?", "Anonymization" ],
+            "responses": [ "It is a process (action) that prevents the identity of a network user from being discovered. In computer science, we refer to a procedure that makes it impossible to discover the identity of a computer network user. We also call this concept a process in computer science that is designed to hide, encrypt the data of the network user." ]
+        },
+        {
+            "tag": "Archive bomb",
+            "patterns": [ "What are the Benefits of Archive bomb?", " Archive bomb?", "What is Archive bomb?", "What's Archive bomb?", "Archive bomb" ],
+            "responses": [ "It is a variant of the virus. It looks like a small file packed with an archiver (zip, rar etc.), which after unpacking turns out to be one or more large files. Leads this is to block free disk space, and because it scans such archives it lasts a long time against the presence of a virus in them, potentially constituting an attack DDoS to the antivirus that is trying to scan them. Good programs antivirus contain a small algorithm that avoids unpacking such files." ]
+        },
+        {
+            "tag": "AstalaVista",
+            "patterns": [ "What are the Benefits of AstalaVista?", " AstalaVista?", "What is AstalaVista?", "What's AstalaVista?", "AstalaVista" ],
+            "responses": [ "The domain name that is usually used as a collection and publishing site related to the security of computer networks. The two oldest (currently no longer functioning) domains of this type were: astalavista.box.sk - a search engine for websites related to security; Astalavista Security Group - a computer security website using astalavista.com addresses and as an astalavista membership portal.net. It is also commonly known as a place to find files with the latest cracks." ]
+        },
+        {
+            "tag": "Backdoor",
+            "patterns": [ "What are the Benefits of Backdoor?", " Backdoor?", "What is Backdoor?", "What's Backdoor?", "Backdoor" ],
+            "responses": [ "An operating system vulnerability consciously designed for later use. A backdoor in the system may e.g. be left by the developer / developer a program writer or a cracker that has been hacked by another software vulnerability (whose usefulness is limited in time until it is removed) or by tossing a Trojan horse to the user." ]
+        },
+        {
+            "tag": "Blacklist",
+            "patterns": [ "What are the Benefits of Blacklist?","What is Blacklist?", "What's Blacklist?", "Blacklist" ],
+            "responses": [ "The list of nicknames (names) under which you cannot register to the program, even if it was generated according to a real algorithm. Program authors they use this type of method to protect themselves against the most famous crackers that provide codes that register the program under their nickname. Such a list of forbidden. Most programs have pseudonyms." ]
+        },
+        {
+            "tag": "Backup",
+            "patterns": [ "What are the Benefits of Backup?","What is Backup?", "What's Backup?", "Backup" ],
+            "responses": [ "Otherwise, a backup or a backup of your files. It is created on different data carriers (the so-called cloud - network drive, servers, portable drives, USB flash drives, CD / DVD, etc.) to prevent data loss." ]
+        },
+        {
+            "tag": "Bitcoin",
+            "patterns": [ "What are the Benefits of Bitcoin?","What is Bitcoin?", "What's Bitcoin?", "Bitcoin" ],
+            "responses": [ "Bitcoin is a pseudo-currency created on the Internet. It functions as a distributed currency, that is, without a central issuing institution, independent of banks, governments and institutions. It can be used between internet users for international settlements, available practically for everyone with access to the Internet (or a mobile phone). Bitcoin is a currency that can be shipped quickly to anywhere in the world bypassing banks and intermediaries, and thus costly commissions, limits and restrictions." ]
+        },
+        {
+            "tag": "Blockchain",
+            "patterns": [ "What are the Benefits of Blockchain?","What is Blockchain?", "What's Blockchain?", "Blockchain" ],
+            "responses": [ "The technique known as blockchain allows the collection and dissemination of information on transactions concluded on the Internet. Transactions are transferred as consecutive data blocks. Each of them contains information about specifically specified number of transactions. As one block is populated with transaction information, another is created, followed by it next. This creates a kind of chain (hence the name: blockchain - is a blockchain). A new block is created on average every 10 minutes. They may contain information on various transactions, e.g. trade, ownership status, shares, stocks, generating electricity and buying or selling currencies, including cryptocurrencies, i.e. electronic currencies" ]
+        },
+        {
+            "tag": "Spam",
+            "patterns": [ "What are the Benefits of spam?","What is spam?", "What's spam?", "spam" ],
+            "responses": [ "It is done by sending hundreds of thousands of IP packets or letters to a given address e-mail. In order not to let the work of our computer be blocked by mass transmission messages, should be observed in the correspondence listed the following rules: • do not unnecessarily give your e-mail address to others (eg if you give your e-mail address on websites check what the rules apply to them privacy for which it can be used), and protect the addresses of others; • protect your e-mail address when you provide it on the website against programs (harvester) collecting e-mail addresses, i.e. provide it in an incomprehensible form for automatons, e.g. by: using graphics; • use the form instead of the e-mail address; • have at least two e-mail addresses, one private (provided only trusted people), and the second public preferably on a free server; • do not send spam or messages that may be treated as spam (eg. refrain from passing popular chain letters). A manifestation of the fight against spam on the Internet was passed by the Polish Sejm in 2002 year the act on the provision of electronic services. He also dealt with this problem. President of the Office of Competition and Consumer Protection. However, it is worth remembering that nowhere in the world it has not been possible to eliminate or even significantly reduce this phenomenon" ]
+        },
+        {
+            "tag": "Bluesnarfing",
+            "patterns": [ "What are the Benefits of Bluesnarfing?","What is Bluesnarfing?", "What's Bluesnarfing?", "Bluesnarfing" ],
+            "responses": [ "Technique of illegal data acquisition using Bluetooth technology. Most often, bluesnarfing people use portable electronic devices, such as a laptop, tablet, PDA, smartphone, mobile phone. A person trying to get in to data on another device, it sends a message to the victim via technology Bluetooth, usually in the form of a business card in vCard format. The recipient receives the message (without the required consent to receive), and its text usually automatically appears on the screen (eg Problems logging in. Enter pin 1111). Then the striker turns on an appropriate application allowing remote access to another equipped device in Bluetooth after entering the same PIN that was sent in the message. Victim, entering this number may lead to data loss" ]
+        },
+        {
+            "tag": "Bluejacking",
+            "patterns": [ "What are the Benefits of Bluejacking?","What is Bluejacking?", "What's Bluejacking?", "Bluejacking" ],
+            "responses": [ "Send mass and unexpected messages via Bluetooth to devices within range. Bluejacking is possible during the so-called device pairing, because the name of the initiating device is displayed on the target device while scanning and searching for available devices. Because the field with the device name can be up to 248 characters long, therefore its short messages can be sent through. Bluejacking can be considered a kind spam sent via Bluetooth" ]
+        },
+        {
+            "tag": "Bluebugging",
+            "patterns": [ "What are the Benefits of Bluebugging?","What is Bluebugging?", "What's Bluebugging?", "Bluebugging" ],
+            "responses": [ "An attack carried out on a mobile phone using Bluetooth technology, which allows a hacker to make phone calls, send messages SMS, reading and writing contacts in the address book or making calls with Internet" ]
+        },
+        {
+            "tag": "Blue boxing",
+            "patterns": [ "What are the Benefits of Blue boxing?","What is Blue boxing?", "What's Blue boxing?", "Blue boxing" ],
+            "responses": [ "A device invented, built and used by the first phreakers (hackers telephone calls) to make free (illegal) telephone calls. The blue box works by generating tones identical to those used by telecommunications companies (frequencies around 2600 Hz), which allows the phreaker to be able to take control of the telephone exchange and get a connection with any selected one worldwide telephone number. The times of greatest popularity of blue box were in the 1970s and early 1980s, and today it has a rather ancient meaning. There are no confirmed cases of its use in Poland. The blue box was the first from such devices and started a series of similar color boxes: ed box, black box, violet box, silver box etc" ]
+        },
+        {
+            "tag": "BotNet",
+            "patterns": [ "What are the Benefits of BotNet?","What is BotNet?", "What's BotNet?", "BotNet" ],
+            "responses": [ " The colloquial name of a network of zombie computers, i.e. computers under the control of hackers using viruses, Trojan horses, etc. According to statistics, approx. 1/3 of computers on the Internet are hardware controlled by hackers. User the victim computer usually has no idea. Computers included in the BotNet they are most often used to carry out DoS attacks or to send spam. To prevent a hacker from taking over your computer and joining to the group of BotNet members, an updated antivirus program should be usedand a firewall" ]
+        },
+        {
+            "tag": "Breakpoint",
+            "patterns": [ "What are the Benefits of Breakpoint?","What is Breakpoint?", "What's Breakpoint?", "Breakpoint" ],
+            "responses": [ "A trap in the debugger (a program that tests other programs to detect and repair errors) for a specific instruction, code address, or data that is on insertion by the debugger in the given place of the CC instruction (INT3). After executing this instruction, the system stops the program execution and returns control to the debugger, which restores the original byte and waits for cracker commands. In the case of a data trap the debugger, in turn, uses the attribute to protect the fragment of memory from reading or setting them appropriately for the situation" ]
+        },
+        {
+            "tag": "Brute-force attack",
+            "patterns": [ "What are the Benefits of Brute-force attack?","What is Brute-force attack?", "What's Brute-force attack?", "Brute-force attack", "Brute Force Attack", "Bruteforce attack" ],
+            "responses": [ "Attacking a computer system using the principle of full review. It is about solving complex problems by looking for each of the possible outcomes. It is an attempt to bypass system security by repeatedly login with any logically predictable password" ]
+        },
+        {
+            "tag": "Browser hijacker",
+            "patterns": [ "What are the Benefits of Browser hijacker?","What is Browser hijacker?", "What's Browser hijacker?", "Browser hijacker" ],
+            "responses": [ "Malicious software that secretly changes the settings of the user's web browser. This can lead to a change of the default start page of the browser, redirecting searches to undesirable websites, adding uninvited (sometimes pornographic) bookmarks or generating unwanted pop-ups (pop-up). Antivirus programs are used to remove hijackers. They also arose special hijacker removal programs." ]
+        },
+        {
+            "tag": "Browser Helper Object",
+            "patterns": [ "What are the Benefits of Browser Helper Object?","What is Browser Helper Object?", "What's Browser Helper Object?", "Browser Helper Object" ],
+            "responses": [ "It uses the DLL library (list of routines / tools used byother programs), which loads each time you start the Microsoft® browser Internet Explorer. Browser Helper Object is often installed by another program in an unnoticeable way (many users do not read information written in small the print that displays the freeware in the end user license agreement final). Since BHO is a program, it can do the same as other programs. Apart from in this, it is not easy to list all the BHO programs installed on a PC. As a result, the functions of BHOs ​​can be misused (For example, trigger ads or track usage patterns from the browser)." ]
+        },
+        {
+            "tag": "Buffer Overflow Attack",
+            "patterns": [ "What are the Benefits of Buffer Overflow Attack?","What is Buffer Overflow Attack?", "What's Buffer Overflow Attack?", "Buffer Overflow Attack" ],
+            "responses": [ "One of the most common types of denial of service network attacks (DoS), belonging to the group that exploits a programming error that occurs in the software. It consists in sending more data to a given network address than foreseen in the program for the data receiving buffer. The attacker can Be aware that its target is immune to this type of attack, or try to count on a stroke luck that the attack was successful." ]
+        },
+        {
+            "tag": "Captcha",
+            "patterns": [ "What are the Benefits of Captcha?","What is Captcha?", "What's Captcha?", "Captcha" ],
+            "responses": [ "A security technique used in forms on websites. For login or transferring data, it is necessary to correctly rewrite the one given in the picture text (usually random characters or a short word). This picture is easy to read by a human, however computer-readable is, at least supposedly, almost impossible. [20] It may also take the form of an election one or more of the pictures, eg select and mark all pictures where there are road signs." ]
+        },
+        {
+            "tag": "Computer forensics",
+            "patterns": [ "What are the Benefits of Computer forensics?","What is Computer forensics?", "What's Computer forensics?", "Computer forensics" ],
+            "responses": [ "The process of finding and presenting electronic means of evidence (electronic evidence that according to our legislation are equivalent to material evidence) concerning committed crimes or abuses. The CF process includes collection, recovery, analysis and presentation in the form of a specialized report of electronic data located at all types of carriers (computer hard drives, floppy disks, CDs, portable memories, company servers etc." ]
+        },
+        {
+            "tag": "Cracking",
+            "patterns": [ "What are the Benefits of Cracking?","What is Cracking?", "What's Cracking?", "Cracking" ],
+            "responses": [ "A discipline of computer science dedicated to breaking all types of security (software and network). Cracking is usually done in violation of copyright laws, and this same illegally. However, a type of cracking has also developed, which consists in testing security at the request of software producers and users Internet (banks, portals, and even government agencies). There are basically two types of cracking: • network cracking, ie breaking computer access security in computer networks; • software cracking, ie breaking protection against unauthorized use of programs." ]
+        },
+        {
+            "tag": "Crackme",
+            "patterns": [ "What are the Benefits of Crackme?","What is Crackme?", "What's Crackme?", "Crackme" ],
+            "responses": [ "The program is usually written in assembler (a program creating machine code from the source code), stuffed with security features, and addressed to crackers to test their skills. Crackme sets specific tasks for crackers, e.g. generating or writing a keygen (code generator access / login). The cracker that breaks the first tough crackme gains recognition in the circles of other crackers and developers. These programs are most often created by veritable security fanatics" ]
+        },
+        {
+            "tag": "Cracker",
+            "patterns": [ "What are the Benefits of Cracker?","What is Cracker?", "What's Cracker?", "Cracker" ],
+            "responses": [ "IT specialist dealing with the search and removal of security measures in the software computer (this most often applies to computer games). In rare cases a cracker does the business of just showing off and proving his own skills. Often, crackers are associated with the illegal software market and profit from it (computer piracy). Software manufacturers protect their products in many different ways to prevent this or making it difficult to make illegal copies and run them. The easiest way is to provide a special code / password to be entered before the installation starting the program. A more sophisticated type of security are the special ones hardware keys plugged into one of the computer connectors (most often a USB port); their presence is necessary for the program to start and function properly. Apps run directly from a CD-ROM reader require the constant presence of the original installation CD in the drive. The goal is to circumvent this or any other safeguard actions of crackers - people who are well versed in computer techniques, and also the internal structure of the computer. Unblocked programs can be without a problem copied and distributed. Very often, along with the illegal copy, small programs called cracks are delivered, which they modify before the first run program code or simulate the presence of a key when running. Cracker is a concept often used interchangeably with a hacker, which is an obvious mistake." ]
+        },
+        {
+            "tag": "Crimeware",
+            "patterns": [ "What are the Benefits of Crimeware?","What is Crimeware?", "What's Crimeware?", "Crimeware" ],
+            "responses": [ "Software illegally collecting data about a computer user (logins, passwords, personal data). This is to gain illegal access to bank accounts or financial services. The end goal, of course, is to steal your money." ]
+        },
+        {
+            "tag": "CSS",
+            "patterns": [ "What are the Benefits of CSS?","What is CSS?", "What's CSS?", "CSS" ],
+            "responses": [ "It is a set of concepts / rules used to map the outer garment of elements HTML files that, when displayed in a web browser window, make up the appearance Web page. CSS abbreviation comes from the words Cascading Style Sheets which means cascading style sheet." ]
+        },
+        {
+            "tag": "Cybersquatting",
+            "patterns": [ "What are the Benefits of Cybersquatting?","What is Cybersquatting?", "What's Cybersquatting?", "Cybersquatting" ],
+            "responses": [ "This procedure consists in registering Internet domains referring to known brands (if they have not already been reserved) and then reselling them at an inflated price to persons or companies who could register the right to them under the trademark law. In other words, a cybersquatter is someone who impersonates well-known people and companies." ]
+        },
+        {
+            "tag": "Cyberstalking",
+            "patterns": [ "What are the Benefits of Cyberstalking?","What is Cyberstalking?", "What's Cyberstalking?", "Cyberstalking" ],
+            "responses": [ "This is the conduct of the perpetrator, which is supposed to affect the psyche of the victim, subjecting her to persecution and intimidation. In general, this phenomenon amounts to harassment of a person. Maybe it can be run directly or virtually. Intrusive calls to communication, sending threats and insults to her address, sending e-mails on someone else's behalf, impersonating the network, spreading false information about someone it's also cyberstalking. This causes the victim a feeling of permanent danger and living under pressure. To avoid such harassment, you should take care of your own safety and anonymity on the Internet. In online contacts, use nicknames that nothing about us do not speak, set up an additional e-mail address only for the purposes of participating in the letters discussion, etc., avoid completing forms with personal data on the pages The WWW and not to blindly trust your network interlocutors" ]
+        },
+        {
+            "tag": "Digital dementia and other forms of e-threats",
+            "patterns": [ "What are the Benefits of Digital dementia and other forms of e-threats?","What is Digital dementia and other forms of e-threats?", "What's Digital dementia and other forms of e-threats?", "Digital dementia and other forms of e-threats" ],
+            "responses": [ "Digital dementia is a term used by South Koreans a few years ago doctors to describe disease symptoms - both mental and physical - resulting from uncontrolled use of digital media. Renowned the German psychiatrist and neurobiologist Manfred Spitzer gives in his book a detailed insight into the essence and causes of this phenomenon. The theses presented by professor Spitzer divided both the public opinion and professional circles for two antagonistic camps. Intensive use, according to Spitzer from digital media results - especially in children and adolescents - in the disappearance of independent thinking, and this leads to distortion of attention and spatial orientation and deterioration your academic performance. On the emotional level, the price to pay for being too much in the digital world there is loneliness, withdrawal from real life, problems with sleeping and concentration including depression and real addiction to electronic media." ]
+        },
+        {
+            "tag": "Cyberterrorism",
+            "patterns": [ "What are the Benefits of Cyberterrorism?","What is Cyberterrorism?", "What's Cyberterrorism?", "Cyberterrorism" ],
+            "responses": [ "Cyberterrorism is a realizable threat or disguised attack that targets the system IT or collected data. Such actions are usually undertaken for the purpose intimidation or extortion of a ransom or expected ransom on individuals, companies or authorities behaviors. Classification of such activities as cyberterrorism usually requires that that they pose a significant threat or could cause serious (measurable) losses. Cyberterrorism can take three main forms: 1. intrusions - including illegal acquisition, deletion or alteration of data) and blockades servers - which are subject to change or corruption of operating systems and leading to multiple connections of both the attacked server and others servers; 2. viruses - programs acting against the will of the system user and to his detriment. Most often they are designed to damage databases and operating systems. 3. Conventional attack - involving physical damage to system components computer, servers, telecommunications infrastructure (airports, railways, etc.) Depending on the method, this type of attack may lead to temporary paralysis system or irreversible data loss." ]
+        },
+        {
+            "tag": "Promoting the idea of ​​hatred and racism",
+            "patterns": [ "What are the Benefits of Promoting the idea of ​​hatred and racism?","What is Promoting the idea of ​​hatred and racism?", "What's Promoting the idea of ​​hatred and racism?", "Promoting the idea of ​​hatred and racism" ],
+            "responses": [ "Racist behavior and the spread of this ideology is prohibited under Polish law. Specifies it is especially Art. 256 of the Criminal Code, which for promoting fascism or of totalitarianism is defined by the following criminal threats: § 1. Whoever publicly promotes a fascist or other totalitarian system of state or calls for hatred on the basis of national, ethnic, racial and religious differences or due to the lack of denominations, is subject to a fine, the penalty of restriction freedom or imprisonment for up to 2 years § 2. The same punishment shall be imposed on anyone who produces, fixes or for the purpose of dissemination he imports, acquires, stores, holds, presents, transports or sends the print, a recording or other item containing the content specified in § 1 or being a medium fascist, communist or other totalitarian symbolism. Internet due to a certain anonymity of expressing views and difficult access to foreign servers, where the dissemination portals are usually located content of this type is a very difficult field to combat this phenomenon. To the statutory Police tasks include identifying racist and neo-Nazi organizations and groups. In each of the voivodeship headquarters, there are cells in the prevention division responsible, among others for identifying potential threats posed by the above groups both in terms of threats to public order and order, as well as demoralizing impact on minors. Police activities also include international cooperation and exchange of information, due to the fact that neo-fascist or appealing groups to fascist symbolism they have a substitute for organizational structures in the dimension transnational." ]
+        },
+        {
+            "tag": "Threat to the functioning of devices and public institutions",
+            "patterns": [ "What are the Benefits of Threat to the functioning of devices and public institutions?","What is Threat to the functioning of devices and public institutions?", "Threat to the functioning of devices and public institutions" ],
+            "responses": [ "Predicted places of direct threats to critical infrastructure ICT are places where key elements of ICT systems are located, such as: ICT infrastructure management and maintenance centers: own resources administration; • offices, departments and offices of security and crisis management as well as entrepreneurs telecommunications providers of telecommunications services; • telecommunications centers of telecommunications undertakings providing services to institutions state, offices and organizations expected to eliminate threats; • points of the route of inter-central and basic telecommunications lines telecommunications lines; • base and satellite stations; • other important telecommunications facilities (e.g. remote concentrators, headends, access nodes, etc." ]
+        },
+        {
+            "tag": "Internet as an element of terrorist communication",
+            "patterns": [ "What are the Benefits of Internet as an element of terrorist communication?","What is Internet as an element of terrorist communication?", "What's Internet as an element of terrorist communication?", "Internet as an element of terrorist communication" ],
+            "responses": [ "Terrorist groups are using the internet for propaganda in no way cannot be censored. Textual, visual and audio communication capabilities that The internet creates them are unimaginable. Until a few years ago, you could only talk about them dream. The publication of the introductory films on the Internet was widely publicized hostage executions in Iraq. An example is Abu Musab Al-Zarqawi, who initiated a series of brutal kidnappings ending in executions. The Internet is there a place where everyone can see material censored by TV. A part the definition of terrorism speaks of committing acts of violence aimed at inducing a deep psychological shock." ]
+        },
+        {
+            "tag": "Threats to state defense",
+            "patterns": [ "What are benefits of the Threats to state defense","What is Threats to state defense?", "What's Threats to state defense?", "Threats to state defense" ],
+            "responses": [ "The most common threats of this type include the following: • violation of the integrity of data processed by the ICT system (modification, addition, destruction); • unauthorized copying of data and its removal from the premises of the company by an employee; • break-ins into the ICT system; • unauthorized access to system resources possible thanks to the disclosure of passwords of others users; • unauthorized access to the data processing site;• destruction of elements or the entire technical infrastructure of the ICT system;• inadequate operating parameters of the ICT system (eg humidity, temperature)."]
+        },
+        {
+            "tag": "State terrorism",
+            "patterns": [ "What are the benefits of State terrorism","What is State terrorism?", "What's State terrorism?", "State terrorism" ],
+            "responses": [ "State financing of terrorism has a long history. At the end of the 19th century, Russia it supported revolutionary groups in the Balkans trying to create Slavic states there. During World War I, the Germans supplied weapons to the Irish nationalists fighting with British authority. At the end of the 20th century, many countries supported terrorist groups. Weaker nations found it a useful method of hitting the opponent who in a conventional war he would have a tremendous advantage over them."]
+        },
+        {
+            "tag": "A threat to enterprises and business",
+            "patterns": [ "What are the benefits of threat to enterprises and business","What is threat to enterprises and business?", "What's threat to enterprises and business?", "threat to enterprises and business" ],
+            "responses": [ "Technological development generates the emergence of tight specializations that require specialized, hermetic knowledge. The so-called SCADA (Supervisory Control and Data Acquisition) systems responsible for managing specific processes, e.g. in public transport or energy. Currently, it is possible to virus the drivers for such a system, which causes, for example, incorrect readings of instruments in an aircraft approaching landing or traffic light systems in cities. An example of deliberate action against the company is the Stuxnet virus, which damaged software at the Iranian nuclear power plant in Bushehr."]
+        },
+        {
+            "tag": "False alarms",
+            "patterns": [ "What are the benefits of False alarms","What is False alarms?", "What's False alarms?", "False alarms" ],
+            "responses": [ "They have become a real problem for state services. The advent of mobile telephony, prepaid services in particular and universal internet access have contributed to intensify this type of false notifications, and at the same time make it significantly more difficult in identifying perpetrators who often use identity concealment systems. In the past years, the authors of this type of alarm most often reported the event by calling the phone Police emergency service or to public numbers of institutions and offices, they are currently sending e-mails from one e-mail account to many entities at the same time.Any information about the planting of an explosive, even if it is suspected, that it is not true must be checked. In actions that aim at verification of the information provided is performed not only by groups of responsible policemen for carrying out sapper activities, but also medical services and other specialized services technical. Very often, the evacuation of endangered objects takes place, which causes disrupting the functioning of a given institution and disrupting its work for several hours. Of course, all these activities generate huge costs"]
+        },
+        {
+            "tag": "Ecoterrorists",
+            "patterns": [ "What are the benefits of Ecoterrorists","What is Ecoterrorists?", "What's Ecoterrorists?", "Ecoterrorists" ],
+            "responses": [ "On the basis of the literature on the subject, the phenomenon of ecological terrorism can be distinguished two main trends: • defenders of the natural environment (pro-environmental groups, environmentalists) • animal rights activists (animists). Pro-environmental groups (eg Earth First !, Earth Liberation Front) in general they are limited to illegal acts of sabotage (so-called ecotage), which they do not directly they harm people. They are aimed at using monkeywrenchig (ang. monkey wrench = adjustable wrench or wrench) destroying machines and light equipment (e.g. by arson or by piercing trunks of designated trees with metal spikes cut), as well as the removal of billboards, the dismantling of signs from ski trails or high-voltage lines, etc. On the other hand, radical animalistic groups (e.g. Anima Rights Militia, Justice Department) in addition to indirect methods of action, they often go much further, even going so far as direct acts of terror against people."]
+        },
+        {
+            "tag": "Cyberbullying",
+            "patterns": [ "What are the benefits of Cyberbullying","What is Cyberbullying?", "What's Cyberbullying?", "Cyberbullying" ],
+            "responses": [ "Cyberbullying (or electronic aggression) is nothing more than the use of violence by stalking, harassing, intimidating, making fun of using communication tools electronic, such as the Internet (e-mail, social networks, forums discussion) and a mobile phone."]
+        },
+        {
+            "tag": "Dialer",
+            "patterns": [ "What are the benefits of Dialer","What is Dialer?", "What's Dialer?", "Dialer" ],
+            "responses": [ "A very dangerous type of computer virus that can generate colossal Internet connection bills. This virus installs on your computer without your knowledge and user consent and makes paid calls via the access number, usually with a service provider located mostly in another country. It is primarily a threat users using a modem connected to the telephone line. The effect of the action dialer can be huge phone bills. Dialer makers usually do contracts with telephone operators under which they share the profit with them. Dialers they appear mostly on websites with pornographic content and with illegal software. To avoid fees, the user goes through the 'registration' process in progres one of the steps is hidden dialer installation."]
+        },
+        {
+            "tag": "DOS",
+            "patterns": [ "What are the benefits of DOS","What is DOS?", "What's DOS?", "DOS", "What are the benefits of Disk Operating System","What is Disk Operating System?", "What's Disk Operating System?", "Disk Operating System" ],
+            "responses": [ "DOS is the general name for operating systems used in personal computers, which did not have a graphical user interface but used text. The most famous the DOS systems were: MS-DOS and PC-DOS."]
+        },
+        {
+            "tag": "DoS",
+            "patterns": [ "What are the benefits of DoS","What is DoS?", "What's DoS?", "DoS", "What are the benefits of Denial of Service","What is Denial of Service?" ,"What's Denial of Service?", "Denial of Service" ],
+            "responses": [ "This is a type of network attack that causes the attacked system to stop working properly. This may be a defect of only one Internet service (e.g. e-mail) or the entire server. When conducting DoS attacks, errors and vulnerabilities that already exist in the system are used. This attack is never associated with data theft or loss, but it brings great losses to companies that suffer losses by blocking their services."]
+        },
+        {
+            "tag": "DDoS",
+            "patterns": [ "What are the benefits of DDoS","What is DDoS?", "What's DDoS?", "DDoS", "What are the benefits of Distributed Denial of Service","What is Distributed Denial of Service?" ,"What's Distributed Denial of Service?", "Distributed Denial of Service"],
+            "responses": [ "On the basis of the literature on the subject, the phenomenon of ecological terrorism can be distinguished two main trends: • defenders of the natural environment (pro-environmental groups, environmentalists) • animal rights activists (animists). Pro-environmental groups (eg Earth First !, Earth Liberation Front) in general they are limited to illegal acts of sabotage (so-called ecotage), which they do not directly they harm people. They are aimed at using monkeywrenchig (ang. monkey wrench = adjustable wrench or wrench) destroying machines and light equipment (e.g. by arson or by piercing trunks of designated trees with metal spikes cut), as well as the removal of billboards, the dismantling of signs from ski trails or high-voltage lines, etc. On the other hand, radical animalistic groups (e.g. Anima Rights Militia, Justice Department) in addition to indirect methods of action, they often go much further, even going so far as direct acts of terror against people."]
+        },
+        {
+            "tag": "DHA",
+            "patterns": [ "What are the benefits of DHA","What is DHA?", "What's DHA?", "DHA",  "What are the benefits of Directory Harvest Attack","What is Directory Harvest Attack?" ,"What's Directory Harvest Attack?", "Directory Harvest Attack"],
+            "responses": [ "One of the methods used by spammers to collect valid addresses e-mail. These addresses become the frontal target of attacks carried out by spammers themselves or resell them to willing spammers. First, the spammer chooses a domain (say 'Victim_domain.com') and then sends out speculative e-mail on probable addresses in this domain (for example 'jacek@ofiara_domena.com', 'anna @ victim_ domain.com'. If the mail server 'victim_domain.com' does not reject the message, the spammer will know that the e-mail address is working and can be used as a target in spam attacks."]
+        },
+        {
+            "tag": "Access to narcotic drugs and doping substances",
+            "patterns": [ "What are the benefits of Access to narcotic drugs and doping substances","What is Access to narcotic drugs and doping substances?", "What's Access to narcotic drugs and doping substances?", "Access to narcotic drugs and doping substances" ],
+            "responses": [ "Drugs have become on the Internet the same product available and advertised as common goods. To encourage their use, many persuasion and manipulation tools are used, ranging from mere information to the presentation of fake logical arguments. With the help of the Internet, traffickers and addicts establish contacts and sell drugs. The Internet is also a forum for 'training' drug addicts about the effects of taking and finding more and more new drugs."]
+        },
+        {
+            "tag": "Doxing",
+            "patterns": [ "What are the benefits of Doxing","What is Doxing?", "What's Doxing?", "Doxing" ],
+            "responses": [ "These are activities consisting in establishing the identity of an anonymous person on the Internet, who is hiding under a pseudonym. Often a number is obtained in addition to personal data telephone number, address details or addresses of user accounts on various websites, where more of his data may be available. It can also be used as part of doxing metadata recorded in photos (e.g. coordinates of the place where the photo was taken, the identity of the author of the photo, etc.). Doxing uses both technical skills concerning the Internet or traces left on the Internet by the person being traced, but also social engineering techniques aimed at extorting data from administrators of data services about the wanted user."]
+        },
+        {
+            "tag": "Drive-by download",
+            "patterns": [ "What are the benefits of Drive-by download","What is Drive-by download?", "What's Drive-by download?", "Drive-by download" ],
+            "responses": [ "This term refers to the process of installing software (usually malicious) when you visit websites or receive e-mail without your knowledge user. It is worth following the rule to be very careful when receiving mail from the unknown users, and under no circumstances should you open any attachments it contains either links. In the case of suspicious e-mails from institutions, you can also call tchem to confirm the credibility of the mail."]
+        },
+        {
+            "tag": "Drive-by pharming",
+            "patterns": [ "What are the benefits of Drive-by pharming","What is Drive-by pharming?", "What's Drive-by pharming?", "Drive-by pharming" ],
+            "responses": [ "bank's website, when in fact it was redirected to a crafted one site. Fake sites are true copies of genuine sites, which is why the user often you won't be able to notice any difference. After being redirected to the site 'Bank', entering the name and password by the user using the 'pharming' method can steal this information. Thanks to this, he will be able to access the victim's account on a real bank website to make a transfer, create new accounts or write checks. The simplest security is to change the router's default password to unique. In addition, it is recommended to use computer security software, i.e. antivirus, firewall, intrusion detection and protection mechanisms against security vulnerabilities."]
+        },
+        {
+            "tag": "Electronic begging",
+            "patterns": [ "What are the benefits of Electronic begging","What is Electronic begging?", "What's Electronic begging?", "Electronic begging" ],
+            "responses": [ "This scam uses emails that appear to come from an organization charities or people in need. In fact, they are ordinary forgery or contain copies of pages to real associations and foundations, but falsifiedbank accounts required to make the payment, causing the fraudsters make the donations end up in their pockets."]
+        },
+        {
+            "tag": "E-cards",
+            "patterns": [ "What are the benefits of E-cards","What is E-cards?", "What's E-cards?", "E-cards" ],
+            "responses": [ "During the holiday season, e-cards are becoming a common way to send greetings to friends. However, fake e-cards may contain viruses or malware, that can infect your computer. There may be a link to the page in cards or greetings, which infects itself - even if there is indeed holiday content. It's necessary to be very careful. Uncritically open any attachments or follow following links to websites may end badly. This applies to all of tchem messages received on the network. Additionally, Christmas screensavers, music and animations are an easy way to spread viruses and malware."]
+        },
+        {
+            "tag": "Exploit",
+            "patterns": [ "What are the benefits of Exploit","What is Exploit?", "What's Exploit?", "Exploit" ],
+            "responses": [ "A type of attacks on computer systems that exploit a system bug or vulnerability or an instrument (e.g. script, program) exploiting this vulnerability to break in. Many crackers and hackers gain applause for finding a vulnerability in the system or creating a script or hacking program, so they are happy to share this knowledge via Internet. Then numerous so-called script kiddies (novice hackers) they run ready-made programs and attack websites or individual computers.Since developers often made similar mistakes, exploits for many different systems began to become more and more standardized."]
+        },
+        {
+            "tag": "Exploit zero-day",
+            "patterns": [ "What are the benefits of Exploit zero-day","What is Exploit zero-day?", "What's Exploit zero-day", "Exploit zero-day" ],
+            "responses": [ "It is a program that is designed to exploit an application bug or vulnerability or an operating system that appears immediately after the vulnerability is detected. Consequently, the manufacturer does not have time to create a patch, and IT administrators do not have time to implement mechanisms protection."]
+        },
+        {
+            "tag": "Fake mail",
+            "patterns": [ "What are the benefits of Fake mail","What is Fake mail?", "What's Fake mail?", "Fake mail" ],
+            "responses": [ "This is a bogus internet message. There are fake portals that do just the sameare a source of false information, but also have and share mechanisms (algorithms, programs) that allow you to send a message with a false sender's address."]
+        },
+        {
+            "tag": "Fake job offers",
+            "patterns": [ "What are the benefits of Fake job offers","What is Fake job offers?", "What's Fake job offers?", "Fake job offers" ],
+            "responses": [ "Fake job vacancies contain a job offer that is targeted at a specific job seekerpaid attachment. It can be, for example, a foreign company offering very attractive earnings when performing a simple activity, mainly via the Internet. Suspected 'employers' they ask for your bank account details so that the transfer can be completed work. After some time it turns out that this data was used for the looting money from the accounts of other people whose data was intercepted by cybercriminals. Victim thinking that he works for a certain company, he becomes an intermediary in stealing money from others cont. The person in question is unknowingly involved in the commission of the crime by sharing criminals their account and intermediating in transferring funds."]
+        },
+        {
+            "tag": "False request for contact or payment",
+            "patterns": [ "What are the benefits of False request for contact or payment","What is False request for contact or payment?", "What's False request for contact or payment?", "False request for contact or payment" ],
+            "responses": [ "A message made and sent online by criminals resembles digital a call from the actual company. In one of them imitating the Post Office Poland reported a problem with a lost parcel. However, no number was given in the text shipment and the address of the facility where the package can be found. Instead it was proposed look at the page (specially crafted and resembling the original) on which we will trace the movement of the parcel sent by Poczta Polska to download a document from it to collect the package."]
+        },
+        {
+            "tag": "Fast flux",
+            "patterns": [ "What are the benefits of Fast flux","What is Fast flux?", "What's Fast flux?", "Fast flux" ],
+            "responses": [ "It is one of the functional technologies in committing Internet crimes, e.g. phishing. This is the DNS (Domain Name System) server switching mechanism domain names ”), which combines a peer-to-peer network, distributed command, internet load balancing and proxy redirection to hide the address pages to which the fraudulent personal data is sent. Fast flux extends the period of activity phishing websites, allowing a larger number of users to be fooled."]
+        },
+        {
+            "tag": "Gray hat",
+            "patterns": [ "What are the benefits of Gray hat","What is Gray hat?", "What's Gray hat?", "Gray hat" ],
+            "responses": [ "A name used for a hacker or cracker who breaks into a computer system or network to direct the administrator's attention to a vulnerability he detects. 'Gray hat 'works with good intentions - it wants to improve and improve security networks. However, posting 'holes' allows other hackers to break in at times. This is what sets him apart from a 'white hat' hacker. The latter notifies the administrator about the vulnerability, but without publishing information about it on the Internet. In a word 'gray hat' stands for a hacker on the verge of good and evil who uses his skills in a peaceful and friendly way, but without breaking with the dark side of hacking. The term gray hat comes from Westerns where usually positive characters They were dressed in white hats, while the 'bad guys' were dressed in black. White hat, black hat."]
+        },
+        {
+            "tag": "Grooming",
+            "patterns": [ "What are the benefits of Grooming","What is Grooming?", "What's Grooming?", "Grooming" ],
+            "responses": [ "The offense of misleading a minor child under 15 in order to producing pornographic material or making sexual advances to him by Internet. Grooming is colloquially considered to deceive and corrupt children by Internet. The crime has been penalized in Polish criminal law since June 8 2010. They are punishable by a fine and 2 to 3 years imprisonment, depending on from the circumstances."]
+        },
+        {
+            "tag": "Hacking",
+            "patterns": [ "What are the benefits of Hacking","What is Hacking?", "What's Hacking?", "Hacking" ],
+            "responses": [ "Actions performed by a hacker (e.g. breaking into a server, breaking passwords, identity theft, etc.)"]
+        },
+        {
+            "tag": "fencing",
+            "patterns": [ "What are the benefits of fencing","What is fencing?", "What's fencing?", "fencing" ],
+            "responses": [ "The subject of the stolen goods may be a stolen or handed-over item bribes and even payment for commission of a crime. Police practice and forensic evidence indicates that stolen goods are usually traded in stolen goods. Polish legislation provides for several types of fencing. In a situation if the perpetrator wanted to or agreed to commit fencing, that is, it is tantamount to the definition of intentional fencing. This act is punishable by imprisonment from 3 months to 5 years in prison."]
+        },
+        {
+            "tag": "Hoax",
+            "patterns": [ "What are the benefits of Hoax","What is Hoax?", "What's Hoax?", "Hoax","What are the benefits of fake virus warning","What is fake virus warning?", "What's fake virus warning?"  ],
+            "responses": [ "It is usually an e-mail that warns the recipient of the threat virus and suggests that the user forward it. Hoax itself is not it causes harm, but is disseminated in good faith news of this type often they cause fear and uncertainty. Most antivirus vendors publishes information about hoaxes on its websites. So before we send the next one people with messages warning about the dangers, it is worth checking them out."]
+        },
+        {
+            "tag": "Honeypot",
+            "patterns": [ "What are the benefits of Honeypot","What is Honeypot?", "What's Honeypot?", "Honeypot" ],
+            "responses": [ "This is the so-called trick against hackers designed to detect unauthorized attempts system use or data acquisition. It usually includes a computer, data and a separate area of a local network that pretend to be a real network but are isolated and properly secured. From the outside, all of this appears to be informative or a resource that could potentially be a target of a cybercriminal."]
+        },
+        {
+            "tag": "HTML",
+            "patterns": [ "What are the benefits of HTML","What is HTML?", "What's HTML?", "HTML" ],
+            "responses": [ "HTML (HyperText Markup Language) is the language used to create web pages. It is in the form of a markup language, that is, in addition to the main text of the document t contains other information that describes it. This additional information is implemented they are through symbols once used in the publishing industry. Thanks In HTML, we can add paragraphs, hyperlinks, headings, and graphic files to the text or multimedia or forms. HTML also determines what the document will look like in the web browser."]
+        },
+        {
+            "tag": "IP Spoofing",
+            "patterns": [ "What are the benefits of IP Spoofing","What is IP Spoofing?", "What's IP Spoofing?", "IP Spoofing" ],
+            "responses": [ "The term for the spoofing of an outbound IP address sent by a computer network packet. Such action may be used to conceal the identity of the attacker (e.g. in the case of DoS attacks), pretending to be another network user and tampering in its network activity or the use of permissions held by another address (an attack used by Kevin Mitnick to get into Tsutomu's computer Shimomury)."]
+        },
+        {
+            "tag": "JavaScript",
+            "patterns": [ "What are the benefits of JavaScript","What is JavaScript?", "What's JavaScript?", "JavaScript" ],
+            "responses": [ "JavaScript is a scripting language for web documents. Scripts written with JavaScript can be placed on web pages. Thanks this language can, for example, make the execution of an instruction conditional on execution relevant instructions by the person viewing the page. JavaScript also has extensive application in creating forms. It allows you to penetrate and check their content the correctness of filling in individual fields or selecting the appropriate options. To you need a web browser to run a script written in JavaScript Netscape Navigator version 2.0 or higher or Microsoft Internet Explorer version 3.0."]
+        },
+        {
+            "tag": "JavaScript injection",
+            "patterns": [ "What are the benefits of JavaScript injection","What is JavaScript injection?", "What's JavaScript injection?", "JavaScript injection" ],
+            "responses": [ "This involves embedding code (usually JavaScript) in the content of the attacked page that when viewed by another user, causes undesired execution by that user share. One such action could be sending a cookie to the attacker."]
+        },
+        {
+            "tag": "One-time code card",
+            "patterns": [ "What are the benefits of One-time code card","What is One-time code card?", "What's One-time code card?", "One-time code card" ],
+            "responses": [ "List of passwords used to confirm identity in Internet transactions, the most common banking. Each of the passwords indicated on the card has its own consecutive number and maybe be used only once - the system asks for another password."]
+        },
+        {
+            "tag": "Keygen",
+            "patterns": [ "What are the benefits of Keygen","What is Keygen?", "What's Keygen?", "Keygen" ,"What are the benefits of KEY GENerator","What is KEY GENerator?", "What's KEY GENerator?", "KEY GENerator"],
+            "responses": [ "A program that generates an appropriate unlocking code based on the data of any user / running the program. Keygens are considered a level indicator cracker knowledge, as they usually contain either reverse coding algorithms or decoded from the original routine in the real program."]
+        },
+        {
+            "tag": "Keylogger",
+            "patterns": [ "What are the benefits of Keylogger","What is Keylogger?", "What's Keylogger?", "Keylogger" ],
+            "responses": [ "One type of activity tracking snoopware computer user, e.g. to control the behavior of company employees, children at home etc. Keylogger works covertly and records your keystrokes and sometimes as well the appearance of the screen, allowing the controller to see what the user is doing computer. Keyloggers can also be used to hijack confidential data (user registration logins, passwords, credit card numbers, codes PIN, etc.). Backdoor viruses usually have a built-in keylogger. Confidential data they are passed on to a hacker who gets unauthorized access to network resources or company."]
+        },
+        {
+            "tag": "Trojan horse",
+            "patterns": [ "What are the benefits of Trojan horse","What is Trojan horse?", "What's Trojan horse?", "Trojan horse" ],
+            "responses": [ "A small program that is usually attached secretly to an e-mail attachment or some kind of program. The name refers to the Trojan horse in which the soldiers were hiding greek. The program contains hidden code that allows a hacker to take control of infected computer and gets through it to a secure one networks. The most famous Trojan horses are Back Orifice and NetBus. In the community hackers using Trojans means taking the easy way, hence all who they use such programs, they are excluded from their community and hailed as lamers."]
+        },
+        {
+            "tag": "Stealing money from the account",
+            "patterns": [ "What are the benefits of Stealing money from the account","What is Stealing money from the account?", "What's Stealing money from the account?", "Stealing money from the account" ],
+            "responses": [ "a telephone number on the screen of the monitored computer), and then sending him a virus (under the guise of updating the program), which is supposed to redirect authorization texts for the hacker."]
+        },
+        {
+            "tag": "Kruegerware",
+            "patterns": [ "What are the benefits of Kruegerware","What is Kruegerware?", "What's Kruegerware?", "Kruegerware", "What are the benefits of Kruegerapps","What is Kruegerapps?", "What's Kruegerapps?", "Kruegerapps" ],
+            "responses": [ "The name of the hard-to-fix malware. The name comes from from Freddy Krueger, a character from the movie 'Nightmare on Elm Street' and refers to the ability coming back to existence. Such viruses re-create even after being removed from the computer, for example, using the Windows system recovery mechanism. Most often this term applies to computer viruses, malware and spyware."]
+        },
+        {
+            "tag": "Cryptocurrency",
+            "patterns": [ "What are the benefits of Cryptocurrency","What is Cryptocurrency?", "What's Cryptocurrency?", "Cryptocurrency", "What are the benefits of Cryptocurrency","What is Cryptocurrency?", "What's Cryptocurrency?", "Cryptocurrency" ],
+            "responses": [ "Cryptocurrency (otherwise cryptographic currency) is a new system of records distributed in the network bookkeeper collecting information on the state of ownership in contractual units. The main feature of cryptocurrency is that it functions like a virtual currency. Owner of such a cryptocurrency stores it on their computer or smartphone application in the so-called wallet that only he has access to. If a transaction is made, it takes place electronically, exactly between him and the contractor. each unit cryptocurrency, has a unique code in which information counteracting it is contained copying or reposting. The key to the concept of cryptocurrencies is also that they are not traded no regulator. So there is no 'central cryptocurrency bank' that can decide e.g. about increasing the supply of cryptocurrency and thus decreasing its value. About how much k The cryptocurrency cybersecurity dictionary will be in circulation, decides its creator at the stage of creating the system. Her value is in the hands of the free market."]
+        },
+        {
+            "tag": "Likejacking",
+            "patterns": [ "What are the benefits of Likejacking","What is Likejacking?", "What's Likejacking?", "Likejacking", "What are the benefits of Likejacking","What is Likejacking?", "What's Likejacking?", "Likejacking" ],
+            "responses": [ "A type of phishing that gathers fans through automatic liking your Facebook profile or page. The user is lured by attractive content posted on your friend's wall (usually with erotic content), but in a link the promised content is not hidden. After clicking on this entry, we are transferred  to a page that causes us to automatically like it without our knowledge and posting this information on our profile. Thanks to this, such spam spreads quickly among other people. Usually on the landing page there is also malware (Trojans, viruses, etc.) that further exposes the user to the dangers. So it is important to have an antivirus or type Internet Security with an up-to-date virus database, which will at least protect us from infection. It is best to avoid clicking on suspicious content theoretically posted by our people friends to protect yourself from likejacking."]
+        },
+        {
+            "tag": "Log",
+            "patterns": [ "What are the benefits of Log","What is Log?", "What's Log?", "Log", "What are the benefits of Log","What is Log?", "What's Log?", "Log" ],
+            "responses": [ "Log (from the name used in the military: journal, log file, event register) - chronological record of information about events and activities relating to the IT system, computer system or computer. The log is built automatically by a computer program, and the operation of saving to a log file is called logging in - this is not the same as logging in to obtain authentication. Logs are used to analyze the operation of the IT system, e.g. to build statistics, detection of attempted intrusions into the system and methods of carrying them out, and detecting any errors and irregularities in the running software. A typical log entry includes: the following information: • relative or absolute time of the event (eg date and time); • type of event, identifier (often used to separate information into several data streams); • name of the user, program, process generating the entry; • data about downloaded files; • IP address if the operation concerns communication over the network; • event qualification (serious error, warning, normal course report works, very detailed); • textual description of the event; • any information needed by the system administrator and possible to be read in an alphanumeric way."]
+        },
+        {
+            "tag": "Macro virus or macro virus",
+            "patterns": [ "What are the benefits of Macro virus or macro virus","What is Macro virus or macro virus?", "What's Macro virus or macro virus?", "Macro virus or macro virus", "What are the benefits of Kruegerapps","What is Macro virus or macro virus?", "What's Macro virus or macro virus?", "Macro virus or macro virus" ],
+            "responses": [ "Viruses are often classified by the virus-fighting company by the types they infect objects. Macroviruses add their code to macros associated with documents, spreadsheets and other data files. The first macro virus - Concept - appeared in July 1995. In a short time, macro viruses became dominant type of viruses. Macroviruses were the first type of virus to deliberately add your data file code. These viruses were very easy to write (or copy) for potential authors. Thus the new macro virus gave rise to many new variants. Finally, these viruses used mail to distribute electronic. The vast majority of macro viruses were designed to be able to spread via Microsoft Office text files or other text editors."]
+        },
+        {
+            "tag": "Malware",
+            "patterns": [ "What are the benefits of Malware","What is Malware?", "What's Malware?", "Malware", "What are the benefits of Malware","What is Malware?", "What's Malware?", "Malware" ],
+            "responses": [ "Malicious software that causes difficulties and obstacles in working on a computer, may also have a criminal activity (gathering confidential data) or harm the user in any way. Malware includes: • computer viruses; • Trojan horses • spyware; • backdoor; • exploits; • rootkits • dialers and others."]
+        },
+        {
+            "tag": "network address translation",
+            "patterns": [ "What are the benefits of network address translation","What is network address translation?", "What's network address translation?", "network address translation", "What are the benefits of network address translation","What is network address translation?", "What's network address translation?", "network address translation" ],
+            "responses": [ "NAT is the extension of Network Address Translation, i.e. the conversion of network addresses. The conversion allows multiple devices, usually connected in a local network, to use from a common address visible on the Internet. Also internet providers usually offer home routers with NAT support. This makes the service provider can assign us only one IP address from your modest pool, and we can use it from home Internet using unlimited (limited in practice, but very much large) number of devices."]
+        },
+        {
+            "tag": "Illicit trade in drugs, anabolics and steroids",
+            "patterns": [ "What are the benefits of Illicit trade in drugs, anabolics and steroids","What is Illicit trade in drugs, anabolics and steroids?", "What's Illicit trade in drugs, anabolics and steroids?", "Illicit trade in drugs, anabolics and steroids", "What are the benefits of Illicit trade in drugs, anabolics and steroids","What is Illicit trade in drugs, anabolics and steroids?", "What's Illicit trade in drugs, anabolics and steroids?", "Illicit trade in drugs, anabolics and steroids" ],
+            "responses": [ "The Pharmaceutical Law Act provides for the illegal sale of drugs up to 2 years in prison. This is not the same as trafficking in illegal drugs, which under certain circumstances is considered a crime. Buying prescription drugs is never a criminal offense. Mail order sale of OTC medicinal products (dispensed without a prescription) by public pharmacies and pharmacy outlets is legally permissible. However, the sale Only entities may deal with the retail sale of over-the-counter medicines authorized to perform this service.  According to statistics, Poles most often buy prescription drugs. Often, however, these drugs they are very expensive, so patients are looking for opportunities to obtain them necessary funds in other places, including online pharmacies. Pharmacies Online stores sometimes offer prices as much as 20% lower than those in stationary sales. The problem for patients, however, turned out to be the lack of appropriate legal regulation regarding the sale of prescription drugs over the Internet. No relevant recipe in pharmaceutical law limited the chances of patients to buy cheaper drugs. Recent regulatory changes have formalized the definition of mail order, thanks why it is not possible to buy cheaper drugs over the Internet. Supreme Pharmaceutical Chamber supported such an initiative, claiming that drugs sold over the Internet may endanger the safety of buyers. All this makes illegal trade drugs continues, and patients who are looking for savings, putting their health at risk – trusting unverified offers formulated by scammers or people without proper ones qualifications. Therefore, it occupies a leading position on the list of statutory bans related to e-commerce trade in drugs and other pharmaceuticals (referring to trade in drugs that have not been released for trading, they are counterfeits in very similar packaging to original drugs, as well as substances sold on prescription, is also illegal sale of drugs in the trial phase)."]
+        },
+        {
+            "tag": "Fraud with payment cards",
+            "patterns": [ "What are the benefits of Fraud with payment cards","What is Fraud with payment cards?", "What's Fraud with payment cards?", "Fraud with payment cards", "What are the benefits of Fraud with payment cards","What is Fraud with payment cards?", "What's Fraud with payment cards?", "Fraud with payment cards" ],
+            "responses": [ "Skimming offenses may be classified jointly as an offense under Art. 310 § 1 of the Penal Code, i.e. counterfeiting another means of payment, which is  a card issued by a bank (they are punishable by up to 25 years in prison) and under Art. 267 § 1 of the Penal Code, i.e. theft of information encoded in a magnetic stripe cards (they are punishable by imprisonment of up to two years) and Art. 278 § 1 of the Code criminal, i.e. stealing money from the account assigned to a given card (they are subject to a penalty up to five years imprisonment). The Dziennik.pl portal reports that from July to December 2014, 40,461 payment card fraud. This is an increase in relation to the first half of the year by approx. 11 percent. And the worst result in the history of these studies in Poland, according to the data of the National Bank Polski, included in the report on the functioning of the Polish system  in the second half of 2014. The largest number of fraudulent operations, almost 42%, were made in the category to which banks include online transactions. Compared to the first half of 2014, it means is an increase of over 6 points. percent The second category in terms of the number of frauds (from English fraud) were transactions made with stolen cards, and their share amounted to 29.6 percent. Counterfeit cards account for over 18% of crimes. Rest are thefts with undelivered, lost and obtained on the basis of cards falsified data. The NBP report reports that the value of card fraud in the second half 2014 amounted to PLN 14.6 million, which means an increase compared to the first half of the year by less than 5 percent. Despite the high dynamics, both the number and the value of frauds remain low level. The central bank calculated that in terms of value, they account for 0.006 percent. of the entire turnover made with payment cards, which places our market among the safest in Europe. Pursuant to the Payment Services Act, the customer is not responsible for transactions made after card cancellation. In case they succeeded cancel the card, the liability is limited to the equivalent of EUR 150. To eliminate the risk of loss, you can insure the card. Some banks have this policy it is free, in others it costs little - a few zlotys a month. However, apart from privileges, the act imposes obligations on card users. Among them is a warrant careful protection of the card and its PIN."]
+        },
+        {
+            "tag": "Auction fraud",
+            "patterns": [ "What are the benefits of Auction fraud","What is Auction fraud?", "What's Auction fraud?", "Auction fraud", "What are the benefits of Auction fraud","What is Auction fraud?", "What's Auction fraud?", "Auction fraud" ],
+            "responses": [ "Fraud and computer fraud are defined in the Criminal Code (respectively article 286 and Art. 287 k.k.). The essence of cheating is motivated to achieve specific goals financial benefits, leading another person to an unfavorable disposition property by misleading her or exploiting her erroneous assessment of reality. The essence of this crime, then, lies in the use of falsehood as a factor causative agent, which is to lead the victim to make an unfavorable decision property."]
+        },
+        {
+            "tag": "Nigerian scam",
+            "patterns": [ "What are the benefits of Nigerian scam","What is Nigerian scam?", "What's Nigerian scam?", "Nigerian scam", "What are the benefits of Nigerian scam","What is Nigerian scam?", "What's Nigerian scam?", "Nigerian scam" ],
+            "responses": [ "Nigerian scam also called 419 Scam (from Article 419 of the Nigerian Code of criminal law, which provides for a penalty for illegal transfers of funds to foreign accounts cash), has been known since the 16th century. Thieves now use e-mail and the old method still works. It uses human naivety and the desire to be fast getting rich. Usually email storyboards are different, but they are based on the same thing template. An e-mail arrives in the victim's mailbox saying that he is sympathetic A stranger from Africa has just won the lottery and is willing to share his winnings. However, earlier asks for a small loan for the cost of collecting the prize, commission bank or stamp duty. The victim is assured in many ways that he will receive a large share of the money, but first must pay a small amount. If I give money to scammers, never again will not see them."]
+        },
+        {
+            "tag": "Matrimonial fraud",
+            "patterns": [ "What are the benefits of Matrimonial fraud","What is Matrimonial fraud?", "What's Matrimonial fraud?", "Matrimonial fraud", "What are the benefits of Matrimonial fraud","What is Matrimonial fraud?", "What's Matrimonial fraud?", "Matrimonial fraud" ],
+            "responses": [ "Most often they are in the form of matrimonial announcements for men sent at random obtained e-mail address. Usually the young, attractive woman turns out to be a Russian woman or a Ukrainian woman who wants to come to the country of a partner she met online. Does not have however, sufficient funds to finance the trip. So he asks for help person over the Internet. If a man falls for it, he soon finds out that both the contact and the money sent have been lost"]
+        },
+        {
+            "tag": "Patcher or crack maker",
+            "patterns": [ "What are the benefits of Patcher or crack maker","What is Patcher or crack maker?", "What's Patcher or crack maker?", "Patcher or crack maker", "What are the benefits of Patcher or crack maker","What is Patcher or crack maker?", "What's Patcher or crack maker?", "Patcher or crack maker" ],
+            "responses": [ "A program created to facilitate the work of crackers. It just creates cracks (passwords or access files) by comparing the original and unprotected files and detecting differences. There are basically two categories of crack-makers passwords): static patcher and generic patcher. The former creates a patch, (unlock program), which modifies the memory location given to it, so it is only suitable for one specific version of the victim's program. The second works more smartly, looks for some a string of so-called opcodes (byte codes) characteristic for the checking procedure status of the program, and appearing in several versions of a given application, and creates a changing crack appropriate part of it, taking as a basis the places to unprotect the program found byte stream."]
+        },
+        {
+            "tag": "Phishing",
+            "patterns": [ "What are the benefits of Phishing","What is Phishing?", "What's Phishing?", "Phishing", "What are the benefits of Phishing","What is Phishing?", "What's Phishing?", "Phishing" ],
+            "responses": [ "Phishing consists in sending e-mail correspondence to random people in which recipients under a made-up pretext are persuaded to log in under a fake one address. It usually pretends to be the login page of a bank, office or popular portal. under attack click on the link in the e-mail. Then you are redirected to the page forged by cybercriminals. In the process of logging in, the unaware client gives your login and password to criminals. In this way, they gain control over the account or customer account on the website. According to Art. 190a of the Penal Code, added to the code by an amendment on February 25, 2011 in §2 phishing (using an image or other data) has also been criminalized personal data for the purpose of causing property or personal damage). Another example would be the emergence of the Zeus virus. The client infects his computer malware after opening a dangerous file (e.g. an email attachment) or while visiting poorly secured websites (including those not arousing suspicion; the degree of their protection does not depend on the posted ones content, but only from the professionalism of the administrators). The infection is not visible until logging in to the electronic banking website of the bank that is located listed in the Trojan configuration file (e.g. Popularny_Bank_Polski_24). Trojan Zeus p2p, after logging in, modifies locally on the infected client computer the appearance of the original bank website. As a result, the client receives information (allegedly from the bank) that as part of testing electronic banking, the bank asks you to do so a test transfer in the amount of X to account XYZ. The message is substituted by a Trojan and does not come from the bank, but forces the client, thanks to the above-mentioned social engineering, approving a fraudulent transfer using the method used by the customer authorization."]
+        },
+        {
+            "tag": "Pharming",
+            "patterns": [ "What are the benefits of Pharming","What is Pharming?", "What's Pharming?", "Pharming", "What are the benefits of Pharming","What is Pharming?", "What's Pharming?", "Pharming" ],
+            "responses": [ "How a network attack was discovered by Symantec and the University's Department of Computer Science Indiana (USA). In a traditional pharming attack, the hacker tries to redirect website visitor to a spoofed page. It can achieve this by modifying the hosts file on the victim's computer or making changes in the DNS (Domain Name System) system (see also drive-by pharming)."]
+        },
+        {
+            "tag": "PHP",
+            "patterns": [ "What are the benefits of PHP","What is PHP?", "What's PHP?", "PHP", "What are the benefits of PHP","What is PHP?", "What's PHP?", "PHP" ],
+            "responses": [ "PHP is a scripting language used to extend the potential of websites. Its syntax is very similar to common C/ programming languages C++, but it's highly simplistic - the PHP programmer usually doesn't have to worry about it errors of variable types, allocation of memory for them, etc. Additionally built-in support for many popular databases makes it easier for the creator to operate on these databases. Thanks to the connection with the GD library, it is also possible to dynamically create images GIF (older GD versions) or PNG (newer versions)."]
+        },
+        {
+            "tag": "Physical Infrastructure Attack",
+            "patterns": [ "What are the benefits of Physical Infrastructure Attack","What is Physical Infrastructure Attack?", "What's Kruegerware?", "Physical Infrastructure Attack", "What are the benefits of Physical Infrastructure Attack","What is Physical Infrastructure Attack?", "What's Physical Infrastructure Attack?", "Physical Infrastructure Attack" ],
+            "responses": [ "One of the types of network DoS attack belonging to the group of exploits. this is one one of the basic ways to make a computer connected to the network stop working. This involves physically breaking the cable that connects your computer to the network. In the case of more extensive computer networks, data can easily be routed another route. Physical access to the hardware is required to be able to launch such an attack at all (e.g. a bunch of cables) near the attacked computer."]
+        },
+        {
+            "tag": "Ping flood",
+            "patterns": [ "What are the benefits of Ping flood","What is Ping flood?", "What's Ping flood?", "Ping flood", "What are the benefits of Ping flood","What is Ping flood?", "What's Ping flood?", "Ping flood" ],
+            "responses": [ "A popular way of attacking an Internet server by overloading the connection with packets ICMP (Internet Control Message Protocol) generated for example by the ping program (ping sends an echo request message with the target IP address, and in return gets a reply if the device is available or an error message if no). It is carried out using a computer with a bandwidth connection greater than the bandwidth of the attacked machine, or by multiple independent ones computers."]
+        },
+        {
+            "tag": "Software piracy",
+            "patterns": [ "What are the benefits of Software piracy","What is Software piracy?", "What's Software piracy?", "Software piracy", "What are the benefits of Software piracy","What is Software piracy?", "What's Software piracy?", "Software piracy" ],
+            "responses": [ "The practice of copying licensed computer software and then illegally distributing and selling copies at discounted prices (compared to original programs). Due to the use by software manufacturers hardware and software security, computer piracy related is with the activities of people called crackers and hackers. Currently computer databases data have become a commercial product with a specific, measurable price. Concept software piracy has therefore also been extended to all kinds of interference with the collected data - copying confidential information, changing and deleting data or threaten to delete them. In Poland - due to the relatively high prices of both both hardware and software - pirating programs is very popular."]
+        },
+        {
+            "tag": "Poachware",
+            "patterns": [ "What are the benefits of Poachware","What is Poachware?", "What's Poachware?", "Poachware", "What are the benefits of Poachware","What is Poachware?", "What's Poachware?", "Poachware" ],
+            "responses": [ "A type of spyware, mainly focused on acquiring the vulnerable information such as username or password."]
+        },
+        {
+            "tag": "Polymorphism",
+            "patterns": [ "What are the benefits of Polymorphism","What is Polymorphism?", "What's Polymorphism?", "Polymorphism", "What are the benefits of Polymorphism","What is Polymorphism?", "What's Polymorphism?", "Polymorphism" ],
+            "responses": [ "Polymorphism is one of the characteristics of some viruses that makes them difficult to recognize and remove. Polymorphic viruses are variably encrypted. They are hard to detect because they change their own form with each infection, which prevents antivirus programs from doing so combating them by searching for a fixed sequence of bytes. As a result, programs anti-virus programs have to use complicated techniques to identify and remove polymorphic viruses, including code emulation or specialized algorithms mathematical."]
+        },
+        {
+            "tag": "Child pornography on the Internet",
+            "patterns": [ "What are the benefits of Child pornography on the Internet","What is Child pornography on the Internet?", "What's Child pornography on the Internet?", "Child pornography on the Internet", "What are the benefits of Child pornography on the Internet","What is Child pornography on the Internet?", "What's Child pornography on the Internet?", "Child pornography on the Internet" ],
+            "responses": [ "According to Art. 202 of the Penal Code who publicly presents pornographic content in such a way that it may impose their receipt on a person who does not wish it, subject to a fine, restriction of liberty or imprisonment for up to 2 years”. Next paragraphs 3 and 4 focus specifically on child pornography and so for dissemination production, recording or importing, storage or possession or disseminating or presenting pornographic content involving a minor (...) is punishable by imprisonment from 2 to 12 years. For recording pornographic content with the participation of a minor is punishable by imprisonment from one to 10 years. Also the one who participates in the presentation of pornographic content for sexual satisfaction with the participation of a minor is subject to a fine, the penalty of restriction of liberty or imprisonment freedom up to 2 years."]
+        },
+        {
+            "tag": "Cryptocurrency wallet",
+            "patterns": [ "What are the benefits of Cryptocurrency wallet","What is Cryptocurrency wallet?", "What's Cryptocurrency wallet?", "Cryptocurrency wallet", "What are the benefits of Cryptocurrency wallet","What is Cryptocurrency wallet?", "What's Cryptocurrency wallet?", "Cryptocurrency wallet" ],
+            "responses": [ "According to information from the bitcoin.pl portal, such wallets are divided into 5 groups: 1) wallets in the form of a computer application. We may only use these wallets on the computer where they are installed, so their mobility is low. Of course we can install such a wallet on a USB key (pendrive) and use it for almost every computer, but mobility still remains unsatisfactory. These wallets are divided into: a) full. Storing the entire chain of blocks (Blockchain). long time of synchronization, b) lightweight. Blockchain is stored on servers, not on a computer like in the case of full portfolios. They are characterized by fast synchronization with the network; 2) offline wallets (without internet connection). Used as a storage safe bitcoins. Mobility very low, except for Paper Wallet, which allows e.g. printing a banknote of any denomination. Wallets: Paper Wallet; 3) browser wallets - made available by a website providing this type of service. To use the wallet, we only need a browser on any computer/ phone/tablet. High mobility at the expense of less security, because the security of our funds already depends on third parties; 4) mobile wallets - Wallet as an application for phones/tablets. As the name suggests these wallets are characterized by very high mobility. They enable, for example, instant payment in a restaurant or anywhere/online service by scanning QR code; 5) hardware wallets - in the form of a USB key. Very safe but with limited mobility. We can use it on any computer with a free USB port"]
+        },
+        {
+            "tag": "Public domain",
+            "patterns": [ "What are the benefits of Public domain","What is Public domain?", "What's Public domain?", "Public domain", "What are the benefits of Public domain","What is Public domain?", "What's Public domain?", "Public domain" ],
+            "responses": [ "According to the portal kompinf.cba.pl. it is a charitable license making software common property whereby the author or authors of the software disclaim their copyright or those rights have expired. Their duration is determined by law. They are important: • throughout the lifetime of the creator and 70 years after his death; • if the creator is unknown – 70 years are counted from the date of the first dissemination of the programme; • if, under the Act, copyrights are vested in a person other than the creator – 70 years are counted from the date of the first dissemination of the programme; • if the program has not been disseminated – 70 years are counted from the date of its completion. Then such software becomes free for the general public and can be free to use by anyone."]
+        },
+        {
+            "tag": "Copyright on the Internet",
+            "patterns": [ "What are the benefits of Copyright on the Internet","What is Copyright on the Internet?", "What's Copyright on the Internet?", "Copyright on the Internet", "What are the benefits of Copyright on the Internet","What is Copyright on the Internet?", "What's Copyright on the Internet?", "Copyright on the Internet" ],
+            "responses": [ "The rules for using other people's works are regulated by the Act of February 4, 1994 on law copyright and related rights (Journal of Laws 1994 No. 24 item 83), referred to as copyright. According to Art. 1 The subject of copyright is any manifestation of creative activity of an individual nature, established in any form, regardless of value, purpose and expression. This is a universal definition for all works creative. A work understood in this way is protected by law, almost automatically, already from its establishment. As an example, texts published on the Internet should be mentioned, films, music recordings, computer programs, etc. Their authors are entitled to protection, and thus the possibility of enforcing civil and criminal liability. Criminal liability in this respect is defined in detail in Art. 115 to 119 of the Act on copyright (Journal of Laws 1994, No. 24, item 83). This liability may, depending depending on the type of offense specified in the Act, apply to penalties, starting with from a fine, even to imprisonment for a period of one to five years. Copyright infringement is on the rise. This is especially true of photography, when we often write articles or set up blogs, we use ones that match the topic images. We often unknowingly infringe copyright. Download only (i.e. downloading, copying) a work already published on the web does not constitute an infringement laws. It constitutes the so-called personal use allowed. Means free use from a product already available online. This does not require the consent of the creator. Irrelevant is whether the file is downloaded to the computer's hard drive or only viewed in the browser website. Such use may include book or film or compilation a single copy of a song. Permitted personal use must not violate normal use of the work or harm the interests of the creator. Sharing such files is already a crime. For the distribution and often illegal sale of audiovisual files used there are tools like: • peer-to-mail (P2M for short) – file exchange technology based on exploitation e-mail accounts as a place of their storage; • peer-to-peer (P2P for short) – a model of communication in a computer network that ensures all hosts have the same privileges, unlike the client-server architecture."]
+        },
+        {
+            "tag": "Ransomware",
+            "patterns": [ "What are the benefits of Ransomware","What is Ransomware?", "What's Ransomware?", "Ransomware", "What are the benefits of Ransomware","What is Ransomware?", "What's Ransomware?", "Ransomware" ],
+            "responses": [ "A type of software used in Internet crime. Action of this type consists in penetrating the virus inside the attacked computer and encrypting it user-owned drive. Then the virus places a note on your computer. In it, the hacker writes what the owner of valuable files must do to recover them. Usually demands transferring money to an electronic bank account and promising to send it in return key and instructions on how to decrypt the data. This corresponds to someone coming to your house and locking your things in a safe and won't give you the combination, said Oliver Friedrichs, director of security at Symantec Corporation. There are ways to protect yourself from encrypting your valuable data. The most important of them is backing up valuable files. If you don't do it regularly, it doesn't take an internet criminal to, for example, make his hard drive crash by himself. Data encrypted by the program in a small number of cases are encrypted enough a simple code that can be broken. Breaking most high encryption algorithms class is an extremely difficult task, practically impossible without access for computer systems with very high computing power."]
+        },
+        {
+            "tag": "Rootkit",
+            "patterns": [ "What are the benefits of Rootkit","What is Rootkit?", "What's Rootkit?", "Rootkit", "What are the benefits of Rootkit","What is Rootkit?", "What's Rootkit?", "Rootkit" ],
+            "responses": [ "A collection of programs used by hackers to avoid detection in the process hacking into the attacked computer. A hacker can achieve this by swapping system files or libraries, or installing a kernel module. A hacker installs a rootkit by gaining user-level access to the targeted system: most common breaks a used password or exploits a software vulnerability. Deadline rootkit originated from the Unix language software environment, however, nowadays it is most often used to refer to techniques used by authors Trojans designed for MS Windows systems to hide presence and activity malicious code. Due to the fact that many users of MS Windows systems works with administrative rights rootkits are becoming more and more popular."]
+        },
+        {
+            "tag": "Web-inspired suicides",
+            "patterns": [ "What are the benefits of Web-inspired suicides","What is Web-inspired suicides?", "What's Web-inspired suicides?", "Web-inspired suicides", "What are the benefits of Web-inspired suicides","What is Web-inspired suicides?", "What's Web-inspired suicides?", "Web-inspired suicides" ],
+            "responses": [ "The Internet can be a place where people make friends, but when people with suicidal tend to advise each other without the supervision of specialists, it becomes dangerous. There are two main cases here: − a third party provides tips through the network to a person who is desperate for various reasons and assistance in committing suicide, and − two or more depressed people meet online for simultaneous committing suicide. It should be remembered that the Penal Code contains in Art. 151 criminal threat for the help provided in suicide: “whoever, by persuasion or by helping, leads a man to take his own life, shall be punishable by imprisonment for a term of 3 months up to 5 years."]
+        },
+        {
+            "tag": "Scam",
+            "patterns": [ "What are the benefits of Scam","What is Scam?", "What's Scam?", "Scam", "What are the benefits of Scam","What is Scam?", "What's Scam?", "Scam" ],
+            "responses": [ "An action intended to mislead someone into thinking they are the owner (owner) of a specific good, usually financial (e.g. lottery win, gadget). promotional). The purpose of this action is to carry out a difficult to prove fraud. The most common form of scam is correspondence in the traditional form or e-mail - a type of spam."]
+        },
+        {
+            "tag": "Script kiddie",
+            "patterns": [ "What are the benefits of Script kiddie","What is Script kiddie?", "What's Script kiddie?", "Script kiddie", "What are the benefits of Script kiddie","What is Script kiddie?", "What's Script kiddie?", "Script kiddie" ],
+            "responses": [ "In computer jargon, a negative term for inexperienced crackers who they use programs and scripts written by others without knowing how they work to gain unauthorized access to computer accounts or files, and to launch attacks against entire computer systems (see: DoS). Mostly crackers they cannot write such programs themselves. They usually don't attack a specific target, but they scan thousands of computers on the network for vulnerable targets."]
+        },
+        {
+            "tag": "sexting",
+            "patterns": [ "What are the benefits of sexting","What is sexting?", "What's sexting?", "sexting", "What are the benefits of sexting","What is sexting?", "What's sexting?", "sexting" ],
+            "responses": [ "According to materials published on the website of the Nobody's Children Foundation in the article M. A. Moreno, Y. Reid Chassiakos, C. Cross, regarding the use of media by children and adolescents of school age cited that in the US today 76% of teenagers uses at least one social media. Though Facebook remains the most popular social networking site, teens tend not to engage only one social media platform. Over 70% maintain their media portfolio on a select few sites including Facebook, Twitter and Instagram. Apps mobile apps provide a wide variety of features such as photo sharing, gaming, and chatting video. The authors of the article estimate that about 12% of young people aged 10 to 19 years old at least once sent a sexual photo to someone else."]
+        },
+        {
+            "tag": "Network sects",
+            "patterns": [ "What are the benefits of Network sects","What is Network sects?", "What's Network sects?", "Network sects", "What are the benefits of Network sects","What is Network sects?", "What's Network sects?", "Network sects" ],
+            "responses": [ "People representing various types of religious sects, using the network for this purpose, they have an easier task when establishing new contacts. Possibility of unrestrained publishing materials of any content, even direct, on the network conversations via Skype with a potential candidate for a sect member, ideally suited to attract others to its ideology and to gain more members. Noticeable is the increase in the number of websites where the above-mentioned issues are given they are very subtle and camouflaged. Reading the text, the child-victim doesn't even he notices when he begins to think in terms of the cult's assumptions, which he often is the first step to conflict and isolation from his current environment."]
+        },
+        {
+            "tag": "Session hijacking",
+            "patterns": [ "What are the benefits of Session hijacking","What is Session hijacking?", "What's Session hijacking?", "Session hijacking", "What are the benefits of Session hijacking","What is Session hijacking?", "What's Session hijacking?", "Session hijacking" ],
+            "responses": [ "This is what we call attacks where a hacker tries to access an existing user session, i.e. those where the identifier has already been assigned to it. It's about getting illegal access to computer systems as a result of interception legitimate user session. It is based on sending, for example, the computer's IP address in the session together with the name of the browser from which it was created, to then compare them on subsequent visits with the data provided by the server"]
+        },
+        {
+            "tag": "Dictionary password cracking method",
+            "patterns": [ "What are the benefits of Dictionary password cracking method","What is Dictionary password cracking method?", "What's Dictionary password cracking method?", "Dictionary password cracking method", "What are the benefits of Dictionary password cracking method","What is Dictionary password cracking method?", "What's Dictionary password cracking method?", "Dictionary password cracking method" ],
+            "responses": [ "This is how we define password cracking using the dictionary method of reading selected list of words, encoding them and checking them one by one, comparing them to the source. A program that uses this method reads the password file, then reads the list of words in the file, which we serve as a dictionary, encodes words using the same algorithm every broken program and checks if the word encoded from our dictionary matches the encoded one password version. In the case of dictionary breaking, there is no 100% certainty that the password will be guessed because this method does not work with passwords of type t9J30nM which is a combination of random letters and numbers - then it is a better solution brute force method. It's best to use a password cracker that has support word mutation filter. Thanks to this application, this filter additionally checks for mutations words e.g. 'underground' also checks '  and others to extract all word combinations. "]
+        },
+        {
+            "tag": "SMishing or SMS phishing",
+            "patterns": [ "What are the benefits of SMishing or SMS phishing","What is SMishing or SMS phishing?", "What's SMishing or SMS phishing?", "Kruegerware", "What are the benefits of SMishing or SMS phishing","What is SMishing or SMS phishing?", "What's SMishing or SMS phishing?", "SMishing or SMS phishing" ],
+            "responses": [ "A type of social engineering attack similar to phishing. It consists in sending SMS messages, that are supposed to induce the victim to take a specific (usually unfavorable) action. The first victims of smishing in Iceland and Australia received confirmation text messages alleged membership in a dating site and information about the fee involved a few dollars a day. The fee could have been avoided by canceling the membership on the indicated website. In fact, opening the page caused an install on the victim's computer of a Trojan that opens a 'backdoor' to a PC."]
+        },
+        {
+            "tag": "Sniffing",
+            "patterns": [ "What are the benefits of Sniffing","What is Sniffing?", "What's Sniffing?", "Sniffing", "What are the benefits of Sniffing","What is Sniffing?", "What's Sniffing?", "Sniffing" ],
+            "responses": [ "Eavesdropping on messages on the network that are not addressed to us. It is possible in LANs. Packets from computer A to computer B sent over the local network they are ignored by all machines along the way. So just find it program that will take interest in these data and show them. Such a program is called sniffer, e.g. Sniffit. It offers two modes of operation - interactive and non-interactive. The first gives us the opportunity to watch the received data on an ongoing basis, the second logs all to files. Sniffers give us the ability to filter data and receive only those of interest to us, e.g. from a given computer to another or all connections to the port, etc."]
+        },
+        {
+            "tag": "Snoopware",
+            "patterns": [ "What are the benefits of Snoopware","What is Snoopware?", "What's Snoopware?", "Snoopware", "What are the benefits of Snoopware","What is Snoopware?", "What's Snoopware?", "Snoopware" ],
+            "responses": [ "Software that tracks the activities of a computer user, especially for controlling behavior of company employees, children at home, etc. Snoopware works secretly and records keystrokes as well as captures screen content allowing control person to inspect what the computer user does - some programs also send reports via e-mail. It belongs to snoopware keyloggers, cybernians."]
+        },
+        {
+            "tag": "Snort",
+            "patterns": [ "What are the benefits of Snort","What is Snort?", "What's Snort?", "Snort", "What are the benefits of Snort","What is Snort?", "What's Snort?", "Snort" ],
+            "responses": [ "Snort (eng. sniffer - network attack detection system) is detection software attacks on computers over networks, available under a free software license."]
+        },
+        {
+            "tag": "Social engineering",
+            "patterns": [ "What are the benefits of Social engineering","What is Social engineering?", "What's Social engineering?", "Social engineering", "What are the benefits of Social engineering","What is Social engineering?", "What's Social engineering?", "Social engineering" ],
+            "responses": [ "Social psychology is focused on gaining information about the attacked system from people working with this system, i.e. it is a form of attack based on attacking minds of people who are able to provide us with sociological techniques access to the data we care about. Such an attack may be an e-mail/phone call from a person who claims to be an administrator system, but in fact it is not. Social engineering is about influencing people and using persuasion to trick them into believing that they are using social engineering is a person with a self-suggested identity created for the purposes of manipulation. Thanks to this, he is able to use his interlocutors with an additional (or not) using technological means to obtain the information sought. Because it has long been known that even the most secure system has a serious vulnerability, i.e carefree user, therefore it is important to train him beforehand and awareness."]
+        },
+        {
+            "tag": "Spam",
+            "patterns": [ "What are the benefits of Spam","What is Spam?", "What's Spam?", "Spam", "What are the benefits of Spam","What is Spam?", "What's Spam?", "Spam" ],
+            "responses": [ "According to the publication on the Interia.pl portal, experts in the field of cybersecurity conducted a spam analysis in 2014. It shows that for the fourth year in a row, programs designed to steal user logins, passwords and other confidential information remain at the top of the list of the most spread malicious programs distributed via e-mail. Spam mailings are becoming more and more popular among cybercriminals impersonating e-mails sent from mobile devices. These messages have appeared in several languages, and their targets were users of iPads, iPhones and Samsung smartphones and other mobile devices. These messages have one thing in common - they are very short content (or lack thereof) and the caption  Sent from my iPhone . They usually also include links to malicious attachments. Unsolicited mass mailings often impersonated notifications from various sources mobile applications such as WhatsApp or Viber. Also sending unsolicited messages to mobile phones constitutes violation of the right to privacy and redress can be sought in court."]
+        },
+        {
+            "tag": "Spoofing",
+            "patterns": [ "What are the benefits of Spoofing","What is Spoofing?", "What's Spoofing?", "Spoofing", "What are the benefits of Spoofing","What is Spoofing?", "What's Spoofing?", "Spoofing" ],
+            "responses": [ "i.e. spoofing IP addresses to pretend to be another server in an existing one network connection. This technique is designed to avoid the security they introduce on a given server, internal network administrators and impersonation of the user network, which allows the attacker to capture all the data that was intended to hit to a real computer. Hijacking is a method of capturing transmission between two systems. This method is very effective when we are trying to access sensitive denial of service programs. ["]
+        },
+        {
+            "tag": "Structured Query Language",
+            "patterns": [ "What are the benefits of Structured Query Language","What is Structured Query Language?", "What's Structured Query Language?", "Kruegerware", "What are the benefits of Structured Query Language","What is Structured Query Language?", "What's Structured Query Language?", "Structured Query Language" ],
+            "responses": [ "It is the most famous and widespread structured query language that is used to create, modify and manage databases. SQL is a declarative language. This means that it is based on non-programming paradigms imperative, which describes execution processes as a sequence of instructions changing the state of the program. How data is stored and retrieved depends on the decision of the database management system (Database Management System, DBMS)."]
+        },
+        {
+            "tag": "SQL injection",
+            "patterns": [ "What are the benefits of SQL injection","What is SQL injection?", "What's SQL injection?", "SQL injection", "What are the benefits of SQL injection","What is SQL injection?", "What's SQL injection?", "SQL injection" ],
+            "responses": [ "An SQL query is a request to perform some action in the database, usually it is is a query from a website asking for a username and password. Because however, most sites do not require any information other than usernames and passwords, a hacker can use the form fields to send his own requests, i.e. entering the SQL code into the database. In this way, hackers can create, read, update, modify and delete data stored in databases, usually to obtain confidential information, such as a PESEL or credit card number or other financial data.."]
+        },
+        {
+            "tag": "Spyware",
+            "patterns": [ "What are the benefits of Spyware","What is Spyware?", "What's Spyware?", "Spyware", "What are the benefits of Spyware","What is Spyware?", "What's Spyware?", "Spyware" ],
+            "responses": [ "A program that, without the knowledge and consent of the user, records his behavior on the Internet. The data obtained in this way is usually transferred to the producer of the program, stored in a database, processed and possibly transferred to persons third. Spyware can install itself on a user's computer via a Trojan horse, visiting a website with spyware installed or during the installation of software downloaded from the Internet. In order to protect myself use an updated anti-virus program against spyware. The following programs are used to remove spyware: Ad-Aware, Spybot Search & Destroy and Spy Sweeper."]
+        },
+        {
+            "tag": "Stalking",
+            "patterns": [ "What are the benefits of Stalking","What is Stalking?", "What's Stalking?", "Stalking", "What are the benefits of Stalking","What is Stalking?", "What's Stalking?", "Stalking" ],
+            "responses": [ "Persistent harassment or harassment of another person via phone calls, text messages, Internet (via e-mail, messenger, chat, social networking site, etc.) or other activity, which may lead to a loss of security. So you can for stalking consider multiple phone calls, text messages or even sending gifts to the person being bullied, ordering services on its behalf, using someone's image or data to create fictitious accounts on social networking sites, etc. In accordance with the Act of February 25, 2011 amending the Penal Code Act, which entered into force on June 6, 2011 year, stalking is punishable by up to 3 years in prison, and if harassment leads to the injured person to attempt suicide, the penalty is extended to 10 years. Prosecution of stalking perpetrators is to take place at the request of the victim."]
+        },
+        {
+            "tag": "Virus signature",
+            "patterns": [ "What are the benefits of Virus signature","What is Virus signature?", "What's Virus signature?", "Virus signature", "What are the benefits of Virus signature","What is Virus signature?", "What's Virus signature?", "Virus signature" ],
+            "responses": [ "These are unique sequences as defined by the anti-virus company bytes used by the antivirus program to identify a malicious one code, e.g. virus. Signature analysis is one of the key methods used to detect and remove malicious code."]
+        },
+        {
+            "tag": "SYN Attack",
+            "patterns": [ "What are the benefits of SYN Attack","What is SYN Attack?", "What's SYN Attack?", "SYN Attack", "What are the benefits of SYN Attack","What is SYN Attack?", "What's SYN Attack?", "SYN Attack" ],
+            "responses": [ "This is one of the types of network DoS attack, belonging to the group of exploits. While Session initiation between the client and the network uses a very small buffer for information computers needed to communicate and start a session. package with these information contains a SYN field that identifies the information exchange hierarchy. Person the attacker can send a large number of requests to establish a connection in a short time, because of which the server is unable to respond to all requests made. It remains in the buffer the first packet, so that the next connection request cannot be accepted. Despite that the unanswered packet is deleted after some time, the effect of sending a large number query is the inability to initiate a session by a legitimate user for some time time. Whether a SYN attack succeeds depends on the operating system, size buffer and time settings after which an unanswered packet is removed. Too correct setting the last two parameters is the responsibility of the administrator"]
+        },
+        {
+            "tag": "Tabnapping",
+            "patterns": [ "What are the benefits of Tabnapping","What is Tabnapping?", "What's Tabnapping?", "Tabnapping", "What are the benefits of Tabnapping","What is Tabnapping?", "What's Tabnapping?", "Tabnapping" ],
+            "responses": [ "According to Kaspersky Lab's definition, this is a type of phishing network attack that consists in using the fact of opening pages in many tabs of the web browser. Tabnapping is when an attacking website replaces the content of another page in another browser tab. If the page replaced in the background is e.g. a bank website, the user may accidentally try to log in to the impersonator the real bank's website, a crafted page that will get the password to our bank account. The website login page can also be changed auction or postal system (webmail)."]
+        },
+        {
+            "tag": "Teardrop IP Attack",
+            "patterns": [ "What are the benefits of Teardrop IP Attack","What is Teardrop IP Attack?", "What's Teardrop IP Attack?", "Teardrop IP Attack", "What are the benefits of Teardrop IP Attack","What is Teardrop IP Attack?", "What's Teardrop IP Attack?", "Teardrop IP Attack" ],
+            "responses": [ "This type of attack takes advantage of the IP bug that requires too a large data packet that cannot be sent by the next router, split it in parts. The packet fragment recognizes where the first part begins package and starts the process of combining all fragments into a whole. In case of an attack Teardrop IP, the attacker changes the fragment responsible for finding the beginning package and starting the merging process, which causes the system to have problems assembling package as a whole and forwarding it. This usually leads to suspension system if the system does not have a proper provision for solving this problem."]
+        },
+        {
+            "tag": "Tempest",
+            "patterns": [ "What are the benefits of Tempest","What is Tempest?", "What's Tempest?", "Tempest", "What are the benefits of Tempest","What is Tempest?", "What's Tempest?", "Tempest" ],
+            "responses": [ "Any electronic transmission of data, video signal from the graphics card to the monitor, data transmitted by the hard disk tape, the signal of pressed keyboard keys, can be overheard. Protecting computer hardware against information leakage (so-called revealing emission) is very difficult. Therefore, Tempest is a very rare method capturing passwords and other information from your computer based on capturing emitted electromagnetic waves, emitted in large quantities by components computer. With the help of specialized, expensive equipment, it can be tuned to the radiation from the keyboard or from the monitor and obtain data from these devices. The average user is unlikely to fall victim to such an attack unless they are interested the special services. However, companies for which data confidentiality is critical (e.g. financial institutions) or government agencies whose work may be of interest to foreign intelligence, must take this risk into account. The only protection against such an attack is creating a shield that does not let any electromagnetic radiation out. These covers include specially shielded against eavesdropping rooms in embassies, some offices and large companies. Conducted there there are secret meetings and councils."]
+        },
+        {
+            "tag": "TOR",
+            "patterns": [ "What are the benefits of TOR","What is TOR?", "What's TOR?", "The Onion Router", "What are the benefits of The Onion Router","What is The Onion Router?", "What's The Onion Router?", "TOR" ],
+            "responses": [ "A virtual computer network that implements onion routing of various types. Network protection of network traffic and the consequences of users almost anonymous access to Internet resources. TOR can be used to bypass the effects of content filtering, censorship and other communication restrictions."]
+        },
+        {
+            "tag": "Content dangerous for children",
+            "patterns": [ "What are the benefits of Content dangerous for children","What is Content dangerous for children?", "What's Content dangerous for children?", "Content dangerous for children", "What are the benefits of Content dangerous for children","What is Content dangerous for children?", "What's Content dangerous for children?", "Content dangerous for children" ],
+            "responses": [ "This is content that, due to its content, e.g. pornography, gambling, brutal violence, etc. may have an undesirable effect on the psyche of children."]
+        },
+        {
+            "tag": "Trojan dropper",
+            "patterns": [ "What are the benefits of Trojan dropper","What is Trojan dropper?", "What's Trojan dropper?", "Trojan dropper", "What are the benefits of Trojan dropper","What is Trojan dropper?", "What's Trojan dropper?", "Trojan dropper" ],
+            "responses": [ "A type of Trojan virus designed to install malicious code on your computer victims. These viruses install another malicious program or a new version on your computer previously installed virus. A trojan dropper is often used to transfer several completely unrelated ones to your computer with each other malicious programs that may differ in behavior or even be created by different coders. As a result, they represent a kind an archive of malicious programs containing many different types of malicious code. They may also include pranks or false positives intended to be a diversion user comments from the actual purpose of the dropper or adware programs or porn. Droppers are often used to deliver known Trojans because it is much easier to write a dropper than a completely new Trojan whose program antivirus will not be able to detect. Most droppers are written using VBS or JavaScript, so they are easy to create and use to perform numerous tasks."]
+        },
+        {
+            "tag": "Trojan clicker",
+            "patterns": [ "What are the benefits of Trojan clicker","What is Trojan clicker?", "What's Trojan clicker?", "Trojan clicker", "What are the benefits of Trojan clicker","What is Kruegerapps?", "What's Trojan clicker?", "Trojan clicker" ],
+            "responses": [ "A type of Trojan that, according to Kaspersky Lab, is intended to inform the author or 'the person who controls them' that malicious code has been installed on the victim's computer and providing information about the IP address, open ports, email addresses, etc. Enters usually part of a 'package' that contains other malicious programs."]
+        },
+        {
+            "tag": "Trojan downloader",
+            "patterns": [ "What are the benefits of Trojan downloader","What is Trojan downloader?", "What's Trojan downloader?", "Trojan downloader", "What are the benefits of Trojan downloader","What is Trojan downloader?", "What's Trojan downloader?", "Trojan downloader" ],
+            "responses": [ "This is another type of Trojan used to install malicious code on your computer The victim virus, like the Trojan dropper, is however more useful to the malware's creators software. First, the Trojan downloader is much smaller than the Trojan dropper. Secondly, it can be used to download an infinite number of new versions malicious code, adware or 'pornware'. Like Trojan dropper, Trojan The downloader is usually written in scripting languages ​​such as VBS or JavaScript. It also often exploits vulnerabilities in Microsoft Internet Explorer."]
+        },
+        {
+            "tag": "Trojan proxy",
+            "patterns": [ "What are the benefits of Trojan proxy","What is Trojan proxy?", "What's Trojan proxy?", "Trojan proxy", "What are the benefits of Trojan proxy","What is Trojan proxy?", "What's Trojan proxy?", "Trojan proxy" ],
+            "responses": [ "A type of Trojan that tracks user activity saves the collected information to disk user's hard drive and then sends it to the malware author or 'person who controls him.' Recorded information includes keystrokes and screenshots, which are used to steal bank details or help carry out online scams."]
+        },
+        {
+            "tag": "Trojan backdoor",
+            "patterns": [ "What are the benefits of Trojan backdoor","What is Trojan backdoor?", "What's Trojan backdoor?", "Trojan backdoor", "What are the benefits of Trojan backdoor","What is Trojan backdoor?", "What's Trojan backdoor?", "Trojan backdoor" ],
+            "responses": [ "A type of Trojan that allows its author or the person who controls it to remotely victim computer management. Unlike legitimate remote administration tools, these Trojans install, run, and operate stealthily, without your knowledge or consent user. Once installed, the backdoor Trojan may be instructed to search, send, receive, execute and delete files, log activities performed on the computer and perform many other activities."]
+        },
+        {
+            "tag": "Loss of privacy",
+            "patterns": [ "What are the benefits of Loss of privacy","What is Loss of privacy?", "What's Loss of privacy?", "Loss of privacy", "What are the benefits of Loss of privacy","What is Loss of privacy?", "What's Loss of privacy?", "Loss of privacy" ],
+            "responses": [ "Sharing personal data raises more and more questions and controversies. Currently a lot institutions (offices, banks) collect information about us. We also often serve our data by taking part in competitions or promotional events. Similarly at when shopping in stationary or online stores, we often unknowingly share your details. In Poland, unfortunately, there are no regulations that would oblige an entrepreneur or an institution public to inform the customer that his data has leaked online. The first progress that has been made in this area concerns telecommunications law. Since April 2013, such an obligation rests with telecommunications operators. In Poland, according to a report prepared in 2012 by Dynamics Markets Limite UK average loss was PLN 35,000. 27% of identity theft victims have been holders of new credit cards, 27% of respondents had to pay for services and goods they never used, and 26% of identity theft victims came into possession new properties. As many as 38% of victims of theft found out that someone was alive to their account. Only 29% of victims emerged unscathed from identity theft. Yes so you should always check whether the data they ask for is really needed and required, and it is best to limit their sharing as much as possible. Particularly applicable the data contained in the ID card."]
+        },
+        {
+            "tag": "Addiction to the network and computer games",
+            "patterns": [ "What are the benefits of Addiction to the network and computer games","What is Addiction to the network and computer games?", "What's Addiction to the network and computer games?", "Addiction to the network and computer games", "What are the benefits of Addiction to the network and computer games","What is Addiction to the network and computer games?", "What's Addiction to the network and computer games?", "Addiction to the network and computer games" ],
+            "responses": [ "People who are most often addicted to computer games are those who have high self-esteem, are very expressive, aggressive, hyperactive, do not count with others, they feel the need to control and win over others, they do not take into account the feelings of other people third parties and, moreover, they are convinced of their excellence. On the other hand, they can be people who are anxious, lost, without acquaintances and friends, with low self-esteem values, rejected and not accepted. Currently, we distinguish two types of addiction to computer games: secondary (when the game computer game is an escape from everyday life) and primal (when the player concentrates on your hardware and games). An addict begins to live in a virtual world, cuts off from reality, can spend hours, days or even weeks in front of the computer (loses the sense of time), forgets about daily duties, personal hygiene, eating food and rest. He starts having problems in every area of ​​his life that keeps happening deepen. The situation in which she cannot play the game causes her fear, anxiety, and also aggression and explosiveness.Infoholism is an addiction to virtual relationships, sometimes translated as sociomania internet (cyber-relationship addiction) - this is addiction to the internet social contacts, excessive involvement in online (virtual) relationships. expresses by participating in mailing lists, IRC (Internet Relay Chat) and contacts at e-mail assistance. The sick person establishes new contacts only and exclusively through the network, has disturbed human-human relations in contacts outside the network. People such people can 'talk' to other Internet users for hours, but they have difficulties during personal contacts, there is also a loss of non-verbal communication in such people, they cannot read the information transmitted in this plane or they read it them wrong. People with this disorder are mainly found in those forms of contact that provide synchronous communication."]
+        },
+        {
+            "tag": "Viber",
+            "patterns": [ "What are the benefits of Viber","What is Viber?", "What's Viber?", "Viber", "What are the benefits of Viber","What is Viber?", "What's Viber?", "Viber" ],
+            "responses": [ "Viber is a free application that allows you to connect with people around the world. Communicator facilitates sending text messages between recipients, sharing photos, and voice calls. In the Viber application, the phone number is simultaneously user ID. The smartphone app syncs with your contact list stored in the phone and automatically detects numbers that also use the messenger. The program enriched with push notifications guarantees that we will never miss out no message. They will reach us even when the application is turned off"]
+        },
+        {
+            "tag": "vishing",
+            "patterns": [ "What are the benefits of vishing","What is vishing?", "What's vishing?", "vishing", "What are the benefits of vishing","What is vishing?", "What's vishing?", "vishing" ],
+            "responses": [ "A new method of fraud, based on phishing, that scammers using Internet telephony try to impersonate, first of all, financial institutions. One of the methods they practice is to send spam, in which the 0-800 number is given where the recipient of the email should update your bank account details. After dialing the given number, it turns on an automaton that asks the victim for specific account access details. Some hackers use ways to bypass the intermediary scam email. They use programs that automatically make VoIP phone calls their list of phone numbers. When someone picks it up information about attempted unauthorized use is automatically displayed on the phone the person's credit card and a request to perform the verification procedure, in which you should enter the card number and its owner's details."]
+        },
+        {
+            "tag": "Virtual Private Network",
+            "patterns": [ "What are the benefits of Virtual Private Network","What is Virtual Private Network?", "What's Virtual Private Network?", "Virtual Private Network", "What are the benefits of VPN","What is VPN?", "What's VPN?", "VPN" ],
+            "responses": [ "Virtual private network - the word virtual, in this case, defines the opposite physical words, and consequently there are no cables that enable connections inside her. All this happens in space. The term private refers to the fact that that access to such a network is restricted and moderated. This is to increase security of such a network. Its users are supposed to feel protected during the exchange files or working together. A VPN can be described as a tunnel through which the traffic within the framework flows private network between end customers over a public network (such as the Internet) in such a way that the nodes of this network are transparent to those in transit packages like this."]
+        },
+        {
+            "tag": "Wabbit",
+            "patterns": [ "What are the benefits of Wabbit","What is Wabbit?", "What's Wabbit?", "Wabbit", "What are the benefits of Wabbit","What is Wabbit?", "What's Wabbit?", "Wabbit" ],
+            "responses": [ "It is a resident (running in the background) malware, non-replicating through the network. The result of its operation is one specific operation, e.g. duplication of this same file until the computer's memory is exhausted."]
+        },
+        {
+            "tag": "Wardriving",
+            "patterns": [ "What are the benefits of Wardriving","What is Wardriving?", "What's Wardriving?", "Wardriving", "What are the benefits of Wardriving","What is Wardriving?", "What's Wardriving?", "Wardriving" ],
+            "responses": [ "It consists of driving around the city to search for wireless access points, so-called hot spots to gain unauthorized access to unsecured ones wireless networks."]
+        },
+        {
+            "tag": "Computer virus",
+            "patterns": [ "What are the benefits of Computer virus","What is Computer virus?", "What's Computer virus?", "Computer virus", "What are the benefits of Computer virus","What is Computer virus?", "What's Computer virus?", "Computer virus" ],
+            "responses": [ "The harmful activity of the virus takes various forms, among which the most common are: forcing the computer to perform unnecessary operations, blocking some operations, blacking out the screen, swapping commands, distorting data, causing chaos in computer memory storage, erasing data, etc.; noted also a case of material destruction - as a result of the activity of the monitor virus burned down. A computer virus is introduced into isolated (non-included) to the network) of computers through infected floppy disks, and to computer networks - through various methods - by hackers. Such harmful activity takes many forms. Happens It is believed that the virus continues it for a long time, which is another analogy between a biological epidemic and computer. The appearance of a virus in computer networks can trigger dangerous social consequences. With such an extensive network of connections between various institutions, literally anyone accepted by the network can pose a threat Material. In such a situation, it is possible to launch, for example, rocket launchers by an infected computer used for military purposes, although military networks belong the most secure in all respects. For other networks, e.g. associations between banks, systematic subtraction or addition of specified sums to selected or all accounts may result in financial consequences on a scale global. There are known cases of blackmailing or threatening to introduce paralyzing viruses communication between individual institutions, which in turn resulted in panic fueled by the media."]
+        },
+        {
+            "tag": "Multipartite viruses",
+            "patterns": [ "What are the benefits of Multipartite viruses","What is Multipartite viruses?", "What's Multipartite viruses?", "Multipartite viruses", "What are the benefits of Multipartite viruses","What is Multipartite viruses?", "What's Multipartite viruses?", "Multipartite viruses" ],
+            "responses": [ "Viruses that use many different methods of attack. Polymorphic viruses try to avoid detection by changing its own code with each infection. Antivirus programs do not so they can look for a fixed sequence of bytes. Some polymorphic viruses use also different encryption techniques with each infection. Currently, the creators of the malicious software still use polymorphism. More often combined with worms and spam, less and less often with classical viruses."]
+        },
+        {
+            "tag": "Boot sector virus",
+            "patterns": [ "What are the benefits of Boot sector virus","What is Boot sector virus?", "What's Boot sector virus?", "Boot sector virus", "What are the benefits of Boot sector virus","What is Boot sector virus?", "What's Boot sector virus?", "Boot sector virus" ],
+            "responses": [ "A virus that infects by changing the code in the boot sector of a floppy disk (sometimes hard disk) to your own code. As a result, every time you try to boot from an infected floppy, the virus will be loaded before the operating system."]
+        },
+        {
+            "tag": "Associated viruses",
+            "patterns": [ "What are the benefits of Associated viruses","What is Associated viruses?", "What's Associated viruses?", "Associated viruses", "What are the benefits of Associated viruses","What is Associated viruses?", "What's Associated viruses?", "Associated viruses" ],
+            "responses": [ "A type of classic file viruses that do not change the attacked file. Instead they create a copy of it that contains the virus. When running an infected file, the copy containing the virus will be activated first. For example, a virus can change notepad.exe to notepad.exd and add your own code to the original file name. Each time the notepad.exe file is launched by the user, it is activated first will be the virus code, and only then the original Notepad file - notepad.exd."]
+        },
+        {
+            "tag": "Virus link",
+            "patterns": [ "What are the benefits of Virus link","What is Virus link?", "What's Virus link?", "Virus link", "What are the benefits of Virus link","What is Virus link?", "What's Virus link?", "Virus link" ],
+            "responses": [ "A type of virus that does not add its code directly to infected files. It spreads by manipulating the way files are accessed on the system FAT files. When an infected file is run, the virus penetrates the memory and writes a (usually hidden) file to disk: this file contains virus code. Next the virus modifies the FAT file system so that other files are redirected to the sector disk containing the virus code. As a result, whenever you run infected file, the system first jumps to the virus code and runs it. Redirect can be detected when CHKDSK is run, however, if the virus is active in memory (the computer was not booted from an uninfected bootable media), it may use stealth technology to mask the changes."]
+        },
+        {
+            "tag": "Overwrite virus",
+            "patterns": [ "What are the benefits of Overwrite virus","What is Overwrite virus?", "What's Overwrite virus?", "Overwrite virus", "What are the benefits of Overwrite virus","What is Overwrite virus?", "What's Overwrite virus?", "Overwrite virus" ],
+            "responses": [ "The virus completely replaces the code in the infected file with its own code. Naturally original the program will stop working, which means that your computer has been infected. from this For this reason, overwrite viruses have never spread effectively in the wild."]
+        },
+        {
+            "tag": "Hiding virus",
+            "patterns": [ "What are the benefits of Hiding virus","What is Hiding virus?", "What's Hiding virus?", "Hiding virus", "What are the benefits of Hiding virus","What is Hiding virus?", "What's Hiding virus?", "Hiding virus" ],
+            "responses": [ "Such virus tries to evade virus scanners by presenting after product inquiry antivirus clean data. Some of these viruses show a clean version of the infected file when scanned. Others hide the new size of the infected file and display the pre-infection size."]
+        },
+        {
+            "tag": "White hat",
+            "patterns": [ "What are the benefits of White hat","What is White hat?", "What's White hat?", "White hat", "What are the benefits of White hat","What is White hat?", "What's White hat?", "White hat" ],
+            "responses": [ "A term that describes a hacker or cracker who breaks into a computer system or networks with good intentions. He wants to reveal the weaknesses of the tested person system, then hand them over to the administrator in order to remove the shortcomings and secure them against further attacks. 'White hats' often treat their business as a hobby, however, there are those who provide their services for a certain fee. It happens also that they are hired by companies as temporary consultants or permanent employees guarding network security."]
+        },
+        {
+            "tag": "Hacking mailboxes",
+            "patterns": [ "What are the benefits of Hacking mailboxes","What is Hacking mailboxes?", "What's Hacking mailboxes?", "Hacking mailboxes", "What are the benefits of Hacking mailboxes","What is Hacking mailboxes?", "What's Hacking mailboxes?", "Hacking mailboxes" ],
+            "responses": [ "Hacking into an e-mail box is an unauthorized interference with personal rights. Right to privacy and confidentiality of correspondence. Both goods are subject to the fundamental constitutional, civil and criminal law protection. The basis for the protection of personal rights is art. 49 of the Constitution: “Freedom shall be ensured and protection of confidentiality of communications. They can only be limited in certain cases specified in the Act and in the manner specified therein. Whereas Art. 47 of the constitution states clearly that 'everyone has the right to legal protection of his private, family, honor and good name and to make decisions about one's personal life. From the listed above the provision of art. 49 results in a general ban on the use of telephone tapping or otherwise entering the circle of news concerning life, interests and activities other people. Art. 23 of the Civil Code (Journal of Laws of 1998, No. 21, item 94) also strongly defends the right to privacy: personal rights of a person, such as in particular health, freedom, honor, freedom of conscience or pseudonym, image, confidentiality of correspondence, inviolability housing, scientific, artistic, inventive and rationalization work, they remain under the protection of civil law, irrespective of the protection provided by others regulations. In the event of a violation of this paragraph, the court may award to the person whose good personal property has been violated, an appropriate sum in monetary compensation for the harm suffered or, at his request, adjudicate an appropriate sum of money to the indicated one social purpose by it, irrespective of any other means needed for removal effects of the infringement. According to the Penal Code (Article 267), a person who unlawfully obtains access to information not intended for them (e.g. by opening a closed letter, and in the analyzed online case - by breaking its security) is subject to punishable by fines, restrictions and even imprisonment for up to 2 years. A slightly different situation is when the perpetrator got into our mail and then made, for example, various type of changes, sending e-mails, data corruption, etc. (Article 268 of the Penal Code). For such operation The Penal Code provides for imprisonment of up to 3 years. However, if the changes made caused financial (property) losses, the perpetrator is threatened imprisonment from 3 months to 5 years."]
+        },
+        {
+            "tag": "Worm",
+            "patterns": [ "What are the benefits of Worm","What is Worm?", "What's Worm?", "Worm", "What are the benefits of Worm","What is Worm?", "What's Worm?", "Worm" ],
+            "responses": [ "This is what we call a type of self-replicating computer virus that does not change contents of files, but resides in computer memory, constantly multiplying. Worm uses part of the operating system, so it runs on its own and is usually invisible for the user. Most often, the worm is noticed when it grows uncontrollably the number of its copies so that it consumes too much computer resources, slows down its work or suspends him."]
+        },
+        {
+            "tag": "Health risks associated with using a computer and the Internet",
+            "patterns": [ "What are the benefits of Health risks associated with using a computer and the Internet","What is Health risks associated with using a computer and the Internet?", "What's Health risks associated with using a computer and the Internet?", "Health risks associated with using a computer and the Internet", "What are the benefits of Health risks associated with using a computer and the Internet","What is Health risks associated with using a computer and the Internet?", "What's Health risks associated with using a computer and the Internet?", "Health risks associated with using a computer and the Internet" ],
+            "responses": [ "Adults mainly point to such medical negative effects of intercourse with a computer, such as postural defects and visual impairment. According to official American statistics, about 30% of computer users suffer for various types of ailments acquired in connection with the work performed. The most vulnerable body parts for health problems are: straining the wrist muscles, strained neck, pain in the lower part of the spine, eyes - improper lighting causes fatigue eyesight, headaches and general body fatigue. The curvature of the spine is straining natural ligaments of the vertebrae. Children and adolescents in the period of intensive physical development are particularly exposed to the danger of losing their health: vision defects, curvature spine. You should take care of work hygiene at the computer, ensure safe conditions work, proper equipment, lighting, teach the correct posture while working on the computer, teach relaxation and force to take recreational breaks during work."]
+        },
+        {
+            "tag": "Cyber ​​Threat Prevention",
+            "patterns": [ "What are the benefits of Cyber ​​Threat Prevention","What is Cyber ​​Threat Prevention?", "What's Cyber ​​Threat Prevention?", "Cyber ​​Threat Prevention", "What are the benefits of Cyber ​​Threat Prevention","What is Cyber ​​Threat Prevention?", "What's Cyber ​​Threat Prevention?", "Cyber ​​Threat Prevention" ],
+            "responses": [ "The first level concerns threats on a national scale. Taken on this preventive actions should concern: • construction and constant modernization of technical security of IT networks; • introducing and enforcing network access security procedures; combat attempts to infiltrate telecommunications systems; • international cooperation in combating transnational cybercrime; • support the production of software for security purposes; • development of emergency programs and plans. The second level concerns threats on the scale of organizations and enterprises. Taken at this level, actions should address: • construction and compliance with security systems; • comply with data access discipline; • regular use of anti-virus software; • training of employees in the field of Internet safety. The third level concerns threats to individual citizens. Undertaken at this level, actions should address: • regular use of anti-virus software; • visit only trusted websites and portals; • carefully verify the sources of incoming correspondence; • immediately inform the Police of any phenomena related to cyberbullying; • comply with the rules of proper conduct of correspondence adopted in the network; • training of volunteers in the field of Internet safety, state aid for organizations involved in disseminating such knowledge."]
+        },
+        {
+            "tag": "firewall",
+            "patterns": [ "What are the benefits of firewall","What is firewall?", "What's firewall?", "firewall", "What are the benefits of firewall","What is firewall?", "What's firewall?", "firewall" ],
+            "responses": [ "One way to protect networks and systems from hackers. The term may refer to both dedicated computer hardware along with special software, as well as to the software itself that blocks unauthorized access to the computer he's guarding."]
+        },
+        {
+            "tag": "DNS poisoning",
+            "patterns": [ "What are the benefits of DNS poisoning","What is DNS poisoning?", "What's DNS poisoning?", "DNS poisoning", "What are the benefits of DNS poisoning","What is DNS poisoning?", "What's DNS poisoning?", "DNS poisoning" ],
+            "responses": [ "A phishing technique that sends a false match record to a DNS server domain name with IP address. The DNS server remembers it for some time (up to several hours) and returns the remembered IP address to clients, resulting in a transfer to a fake page."]
+        },
+        {
+            "tag": "Zombie",
+            "patterns": [ "What are the benefits of Zombie","What is Zombie?", "What's Zombie?", "Zombie", "What are the benefits of Zombie","What is Zombie?", "What's Zombie?", "Zombie" ],
+            "responses": [ "A computer connected to the Internet on which it has been installed without the knowledge of its owner an externally overseen program by someone else. The purpose of such action is usually the use of a computer for illegal activities, such as attacks DDoS. Sometimes they are also used to access high power computing. The name of the virus comes from zombie characters in horror movies, which too they were there unconscious and directed by someone else."]
+        }       
+    ]   
+}
+
+
+
